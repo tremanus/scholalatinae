@@ -119,6 +119,13 @@ body {
   transform: scale(1.025);
 }
 
+.intro-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centers vertically within the viewport */
+}
+
 
 @media (max-width: 872px) {
   .home-content h1 {

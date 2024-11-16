@@ -4,13 +4,14 @@ import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import AOS from 'aos'; // Import AOS library
 import 'aos/dist/aos.css'; // Import AOS styles
+import YouTube from 'react-youtube';
 import './home.css'; // Ensure the CSS file is correctly imported
 
 const Home = () => {
   const router = useRouter(); // Initialize useRouter
 
   useEffect(() => {
-    document.title = "InboxRecap | Clear & Summarize Your Inbox";
+    document.title = "ScholaLatinae | Learn Latin & Greek for Free";
     AOS.init({ duration: 1000, once: true }); // Initialize AOS with custom settings
   }, []);
 
@@ -37,6 +38,20 @@ const Home = () => {
           <button className="try-button" onClick={handlePricingClick}>I Have An Account</button>
         </div>
         </div>
+      </div>
+      <div className="intro-video">
+      <YouTube 
+          videoId="mpY3Ev0gx8c" 
+          opts={{
+            height: '560',
+            width: '940',
+            playerVars: {
+              autoplay: 0, // Autoplay the video
+              controls: 1, // Show video player controls
+              start: 4, 
+            },
+          }}
+        />
       </div>
     </section>
   );
