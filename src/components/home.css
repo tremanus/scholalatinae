@@ -1,0 +1,96 @@
+/* Import Plus Jakarta Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+/* Apply Plus Jakarta Sans font to the entire page */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Other styles */
+.home {
+  padding: 20px 0;
+  margin-top: 80px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  height: fit-content; /* Ensure there's enough space for the content */
+  padding: 0 20px; /* Add padding to avoid content touching edges */
+  box-sizing: border-box; /* Include padding in the element’s total width and height */
+  margin: 0; /* Remove left margin */
+}
+
+.home-content h1,
+.home-content p {
+  max-width: 760px; /* Limit the maximum width of the text */
+  text-align: center; /* Center text horizontally */
+}
+
+.home-content h1 {
+  font-size: 5rem;
+  font-weight: 750;
+  color: #222;
+  margin: 80px 0 25px; /* Adjust margin to ensure spacing */
+}
+
+.home-content h2 {
+  color: #666;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.home-content p.check {
+  color: #444; /* For check text */
+  margin: 8px 0; /* Reduced vertical spacing */
+}
+
+.home-content p.cancel {
+  color: #888; /* For cancel text */
+  margin: 10px 0; /* Reduced vertical spacing */
+  font-size: 0.9rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 30px; /* Space between buttons */
+  margin: 20px 0; /* Adjust margin for spacing */
+}
+
+.view-plans-button,
+.try-button {
+  background: #86d693;
+  border: none;
+  color: #333;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px; /* Increased border-radius for cylindrical look */
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.view-plans-button {
+  background: hsl(57, 78%, 66%); /* Different color for the view plans button */
+}
+
+.view-plans-button:hover {
+  transform: scale(1.1);
+}
+
+.try-button:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 672px) {
+  .home-content h1 {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,32 @@
+header {
+    background: #ffffff;
+    color: #333;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    border-bottom: 0.8px solid rgb(164, 164, 164);
+    z-index: 1000;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+  }
