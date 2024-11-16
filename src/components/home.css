@@ -14,11 +14,11 @@ body {
 
 .home-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
   height: fit-content; /* Ensure there's enough space for the content */
-  padding: 0 20px; /* Add padding to avoid content touching edges */
+  padding: 150px 20px; /* Add padding to avoid content touching edges */
   box-sizing: border-box; /* Include padding in the element’s total width and height */
   margin: 0; /* Remove left margin */
 }
@@ -33,15 +33,26 @@ body {
   font-size: 5rem;
   font-weight: 750;
   color: #222;
-  margin: 80px 0 25px; /* Adjust margin to ensure spacing */
+  text-align: center;
 }
 
 .home-content h2 {
-  color: #666;
-  font-weight: 400;
-  font-size: 1.5rem;
+  color: #8d5c03;
+  font-weight: 500;
+  font-size: 3rem;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.home-content h3 {
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.special {
+  font-weight: 1000;
+  color: purple;
 }
 
 .home-content p.check {
@@ -55,9 +66,26 @@ body {
   font-size: 0.9rem;
 }
 
+.left-content img {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 40px auto;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.right-content {
+  width: 45%;
+}
+
+
 .button-container {
   display: flex;
-  gap: 30px; /* Space between buttons */
+  flex-direction: column;
+  gap: 20px; /* Space between buttons */
   margin: 20px 0; /* Adjust margin for spacing */
 }
 
@@ -67,6 +95,9 @@ body {
   border: none;
   color: #333;
   padding: 10px 30px;
+  width: 80%;
+  margin: 0px auto;
+  max-width: 400px;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -81,16 +112,26 @@ body {
 }
 
 .view-plans-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.025);
 }
 
 .try-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.025);
 }
 
 
-@media (max-width: 672px) {
+@media (max-width: 872px) {
   .home-content h1 {
     font-size: 4rem;
+  }
+  .home-content {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .left-content, .right-content {
+    width: 80%;
+  }
+  .left-content {
+    margin-bottom: 50px;
   }
 }
