@@ -13,9 +13,10 @@
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.1",
     "@mui/joy": "^5.0.0-beta.48",
-    "@mui/material": "^6.1.1",
+    "@mui/material": "^6.1.7",
+    "@toolpad/core": "^0.9.0",
     "aos": "^2.3.4",
-    "next": "14.2.13",
+    "next": "^15.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-youtube": "^10.1.0"
