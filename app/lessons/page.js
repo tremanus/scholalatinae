@@ -59,7 +59,7 @@ export default function Lessons() {
   return (
     <Dashboard>
       <Box sx={{ py: 4, px: 2, maxWidth: 1200, mx: 'auto', position: 'relative' }}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h4" align="center" sx={{ fontWeight: '600' }} gutterBottom>
           Lessons
         </Typography>
   
@@ -128,10 +128,11 @@ export default function Lessons() {
                   }}
                   onClick={() => setSelectedVideo(video)}
                 >
+                  {/* Display the thumbnail first */}
                   <CardMedia
-                    component="iframe"
-                    src={`https://www.youtube.com/embed/${video.videoId}`}
-                    title={video.title}
+                    component="img"
+                    image={video.thumbnail}
+                    alt={video.title}
                     sx={{
                       width: '100%',
                       height: 0,
@@ -173,7 +174,7 @@ export default function Lessons() {
           <Box
             sx={{
               position: 'fixed',
-              top: 0,
+              top: '40px',
               left: 0,
               width: '100%',
               height: '100%',
@@ -212,5 +213,5 @@ export default function Lessons() {
         )}
       </Box>
     </Dashboard>
-  );  
+  );
 }
