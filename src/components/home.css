@@ -18,7 +18,7 @@ body {
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
   height: fit-content; /* Ensure there's enough space for the content */
-  padding: 150px 20px; /* Add padding to avoid content touching edges */
+  padding: 100px 20px; /* Add padding to avoid content touching edges */
   box-sizing: border-box; /* Include padding in the element’s total width and height */
   margin: 0; /* Remove left margin */
 }

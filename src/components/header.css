@@ -30,3 +30,50 @@ header {
     color: #333;
     font-weight: 600;
   }
+
+  .login-button {
+    background: rgb(244, 244, 244);
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px; /* Increased border-radius for cylindrical look */
+    margin-left: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: 0.5px solid #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-button:hover {
+    transform: scale(1.1);
+    background: rgb(244, 244, 244);
+  }
+  
+  .signup-button {
+    background: #6ebef7;
+    border: none;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 25px; /* Increased border-radius for cylindrical look */
+    margin-left: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signup-button:hover {
+    transform: scale(1.05);
+    background: #6ebef7;
+  }
+
+  @media (max-width: 888px) {
+    .signup-button, .login-button {
+      display: none; /* Hide the buttons on mobile, they will be in the dropdown */
+    }
+  }

@@ -58,7 +58,7 @@ export default function Lessons() {
 
   return (
     <Dashboard>
-      <Box sx={{ py: 4, px: 2, maxWidth: 1200, mx: 'auto', position: 'relative' }}>
+      <Box sx={{ py: 4, px: 2, maxWidth: 1200, mx: 'auto', mt: '25px', position: 'relative' }}>
         <Typography variant="h4" align="center" sx={{ fontWeight: '600' }} gutterBottom>
           Lessons
         </Typography>
