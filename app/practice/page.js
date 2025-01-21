@@ -115,7 +115,8 @@ export default function Quiz() {
           display: 'flex', 
           justifyContent: 'center', 
           alignItems: 'center', 
-          minHeight: '80vh' 
+          minHeight: '80vh',
+          bgcolor: '#f5f5f5' 
         }}>
           <LinearProgress sx={{ width: '60%' }} />
         </Box>
@@ -147,80 +148,97 @@ export default function Quiz() {
         </Paper>
 
         {/* Question Card */}
-{currentQuestion && (
-  <Card sx={{ maxWidth: 800, mx: 'auto', borderRadius: 2 }}>
-    <CardContent sx={{ p: 4 }}>
-      <Stack direction="row" justifyContent="space-between" alignItems="center" mb={3}>
-        {/* Left side with Question Difficulty */}
-        <Typography variant="body2" color="textSecondary">
-          Success Rate: {calculateSuccessRate(currentQuestion)}%
-        </Typography>
-
-        {/* Right side with Success Rate */}
-        <Stack direction="row" spacing={3} alignItems="center">
-          {currentQuestion?.difficulty && (
-            <Typography 
+        <Card sx={{ maxWidth: 800, mx: 'auto', borderRadius: 2, position: 'relative' }}>
+          {loading && (
+            <LinearProgress 
               sx={{ 
-                color: getDifficultyColor(currentQuestion.difficulty),
-                fontWeight: 500,
-                bgcolor: '#f5f5f5',
-                px: 2,
-                py: 1,
-                borderRadius: 1
-              }}
-            >
-              {currentQuestion.difficulty.charAt(0).toUpperCase() + 
-               currentQuestion.difficulty.slice(1)}
-            </Typography>
+                position: 'absolute', 
+                top: 0, 
+                left: 0, 
+                right: 0,
+                borderRadius: '8px 8px 0 0'
+              }} 
+            />
           )}
-        </Stack>
-      </Stack>
+          <CardContent sx={{ p: 4 }}>
+            {currentQuestion ? (
+              <>
+                <Stack direction="row" justifyContent="space-between" alignItems="center" mb={3}>
+                  <Typography variant="body2" color="textSecondary">
+                    Success Rate: {calculateSuccessRate(currentQuestion)}%
+                  </Typography>
+                  <Stack direction="row" spacing={3} alignItems="center">
+                    {currentQuestion?.difficulty && (
+                      <Typography 
+                        sx={{ 
+                          color: getDifficultyColor(currentQuestion.difficulty),
+                          fontWeight: 500,
+                          bgcolor: '#f5f5f5',
+                          px: 2,
+                          py: 1,
+                          borderRadius: 1
+                        }}
+                      >
+                        {currentQuestion.difficulty.charAt(0).toUpperCase() + 
+                         currentQuestion.difficulty.slice(1)}
+                      </Typography>
+                    )}
+                  </Stack>
+                </Stack>
 
-      <Typography 
-        variant="h5" 
-        sx={{ 
-          mb: 4, 
-          color: '#1a1a1a',
-          fontWeight: 500,
-          lineHeight: 1.4
-        }}
-      >
-        {currentQuestion.question}
-      </Typography>
+                <Typography 
+                  variant="h5" 
+                  sx={{ 
+                    mb: 4, 
+                    color: '#1a1a1a',
+                    fontWeight: 500,
+                    lineHeight: 1.4
+                  }}
+                >
+                  {currentQuestion.question}
+                </Typography>
 
-      <Stack spacing={2}>
-        {currentQuestion.options.map((option, index) => (
-          <Button
-            key={index}
-            variant={selectedAnswer === option ? 'contained' : 'outlined'}
-            fullWidth
-            onClick={() => handleAnswerSelect(option)}
-            disabled={isAnswered}
-            sx={{
-              p: 2,
-              justifyContent: 'flex-start',
-              textTransform: 'none',
-              fontSize: '1rem',
-              bgcolor: () => {
-                if (!isAnswered) return 'transparent';
-                if (option === currentQuestion.correct_answer) return '#c8e6c9';
-                if (option === selectedAnswer) return '#ffcdd2';
-                return 'transparent';
-              },
-              color: 'black',
-              '&:hover': {
-                bgcolor: !isAnswered && '#f5f5f5'
-              },
-              border: '1px solid #e0e0e0',
-            }}
-          >
-            {option}
-          </Button>
-        ))}
-      </Stack>
-    </CardContent>
-  </Card>
-)}
+                <Stack spacing={2}>
+                  {currentQuestion.options.map((option, index) => (
+                    <Button
+                      key={index}
+                      variant={selectedAnswer === option ? 'contained' : 'outlined'}
+                      fullWidth
+                      onClick={() => handleAnswerSelect(option)}
+                      disabled={isAnswered || loading}
+                      sx={{
+                        p: 2,
+                        justifyContent: 'flex-start',
+                        textTransform: 'none',
+                        fontSize: '1rem',
+                        bgcolor: () => {
+                          if (!isAnswered) return 'transparent';
+                          if (option === currentQuestion.correct_answer) return '#c8e6c9';
+                          if (option === selectedAnswer) return '#ffcdd2';
+                          return 'transparent';
+                        },
+                        color: 'black',
+                        '&:hover': {
+                          bgcolor: !isAnswered && '#f5f5f5'
+                        },
+                        border: '1px solid #e0e0e0',
+                      }}
+                    >
+                      {option}
+                    </Button>
+                  ))}
+                </Stack>
+              </>
+            ) : (
+              <Stack alignItems="center" spacing={2} py={8}>
+                <Typography variant="h6" color="textSecondary">
+                  Loading question...
+                </Typography>
+                <LinearProgress sx={{ width: '200px' }} />
+              </Stack>
+            )}
+          </CardContent>
+        </Card>
 
         {/* Feedback Alert */}
         <Fade in={feedback.show}>

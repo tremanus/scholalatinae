@@ -56,16 +56,52 @@ export async function initializeUserStats(userId) {
   }
 }
 
-function calculateTargetDifficulty(userStats) {
-  const totalAttempted = userStats.questions_attempted || 0;
-  const successRate = totalAttempted > 0 
-    ? (userStats.questions_correct / totalAttempted) * 100 
-    : 0;
+async function calculateTargetDifficulty(userStats) {
+    console.log('Calculating target difficulty for user:', userStats.user_id);
 
-  if (totalAttempted < 10) return 'beginner';
-  if (successRate > 80 && userStats.current_streak >= 5) return 'advanced';
-  if (successRate > 65) return 'intermediate';
-  return 'beginner';
+    // Get the user's last 25 attempts
+    const { data: recentAttempts, error } = await supabase
+      .from('user_progress')
+      .select('is_correct, created_at')  // Added created_at for debugging
+      .eq('user_id', userStats.user_id)
+      .order('created_at', { ascending: false })
+      .limit(25);
+  
+    if (error) {
+      console.error('Error fetching recent attempts:', error);
+      return 'beginner';
+    }
+  
+    // If user has less than 10 attempts total, stay in beginner
+    if (userStats.questions_attempted < 10) {
+      console.log('User has less than 10 total attempts, staying in beginner');
+      return 'beginner';
+    }
+  
+    // Calculate success rate from recent attempts
+    const correctAttempts = recentAttempts.filter(attempt => attempt.is_correct).length;
+    const recentSuccessRate = (correctAttempts / recentAttempts.length) * 100;
+
+    console.log('Recent performance:', {
+        totalRecent: recentAttempts.length,
+        correctRecent: correctAttempts,
+        successRate: recentSuccessRate,
+        currentStreak: userStats.current_streak
+    });
+  
+    if (recentSuccessRate > 90) {
+        return 'advanced';
+    }
+    // Move to advanced if recent performance is excellent and has a streak
+    if (recentSuccessRate > 80 && userStats.current_streak >= 5) {
+      return 'advanced';
+    }
+    // Move to intermediate if recent performance is good
+    if (recentSuccessRate > 65) {
+      return 'intermediate';
+    }
+
+    return 'beginner';
 }
 
 async function getQuestionStats(questionId) {
@@ -92,8 +128,10 @@ async function getQuestionStats(questionId) {
 export async function getNextQuestion(userEmail) {
     try {
       const userStats = await initializeUserStats(userEmail);
-      const targetDifficulty = calculateTargetDifficulty(userStats);
-  
+
+      const targetDifficulty = await calculateTargetDifficulty(userStats);
+      console.log('Target difficulty calculated:', targetDifficulty);
+
       // Get recently answered questions
       const { data: recentQuestions } = await supabase
         .from('user_progress')
@@ -102,12 +140,16 @@ export async function getNextQuestion(userEmail) {
         .gte('created_at', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString());
   
       // First try: Get questions at target difficulty, not recently answered
-      let { data: questions } = await supabase
+      let { data: questions, error: questionsError } = await supabase
         .from('quiz_questions')
         .select('*')
         .not('id', 'in', `(${recentQuestions?.map(q => q.question_id).join(',') || '0'})`)
         .eq('difficulty', targetDifficulty)
         .limit(50);
+
+      if (questionsError) {
+        console.error('Error fetching target difficulty questions:', questionsError);
+      }
   
       // Second try: Get any questions not recently answered
       if (!questions?.length) {
@@ -116,6 +158,7 @@ export async function getNextQuestion(userEmail) {
           .select('*')
           .not('id', 'in', `(${recentQuestions?.map(q => q.question_id).join(',') || '0'})`)
           .limit(50));
+
       }
   
       // Final try: If all questions were answered recently, get the least recently answered ones
@@ -135,12 +178,19 @@ export async function getNextQuestion(userEmail) {
       }
   
       if (!questions?.length) {
+        console.error('No questions available at all');
         throw new Error('No questions available in the database');
       }
   
       // Select random question from available ones
       const selectedQuestion = questions[Math.floor(Math.random() * questions.length)];
+      console.log('Selected question:', {
+        id: selectedQuestion.id,
+        difficulty: selectedQuestion.difficulty
+      });
+
       const stats = await getQuestionStats(selectedQuestion.id);
+      console.log('Question stats:', stats);
   
       return {
         ...selectedQuestion,
@@ -151,7 +201,7 @@ export async function getNextQuestion(userEmail) {
       console.error('Error getting next question:', error);
       throw error;
     }
-  }
+}
 
 export async function recordAnswer(userEmail, questionId, isCorrect, answerGiven) {
     try {
