@@ -150,79 +150,69 @@ async function getQuestionStats(questionId) {
 
 export async function getNextQuestion(userEmail) {
     try {
-      const userStats = await initializeUserStats(userEmail);
+        const userStats = await initializeUserStats(userEmail);
+        const targetDifficulty = await calculateTargetDifficulty(userStats);
+        console.log('Target difficulty calculated:', targetDifficulty);
 
-      const targetDifficulty = await calculateTargetDifficulty(userStats);
-      console.log('Target difficulty calculated:', targetDifficulty);
+        // Get recently answered questions
+        const { data: recentQuestions } = await supabase
+            .from('user_progress')
+            .select('question_id')
+            .eq('user_id', userEmail)
+            .gte('created_at', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString());
 
-      // Get recently answered questions
-      const { data: recentQuestions } = await supabase
-        .from('user_progress')
-        .select('question_id')
-        .eq('user_id', userEmail)
-        .gte('created_at', new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString());
-  
-      // First try: Get questions at target difficulty, not recently answered
-      let { data: questions, error: questionsError } = await supabase
-        .from('quiz_questions')
-        .select('*')
-        .not('id', 'in', `(${recentQuestions?.map(q => q.question_id).join(',') || '0'})`)
-        .eq('difficulty', targetDifficulty)
-        .limit(50);
+        // Get questions at appropriate difficulty
+        let query = supabase
+            .from('quiz_questions')
+            .select('*')
+            .eq('difficulty', targetDifficulty)
+            .limit(50);
 
-      if (questionsError) {
-        console.error('Error fetching target difficulty questions:', questionsError);
-      }
-  
-      // Second try: Get any questions not recently answered
-      if (!questions?.length) {
-        ({ data: questions } = await supabase
-          .from('quiz_questions')
-          .select('*')
-          .not('id', 'in', `(${recentQuestions?.map(q => q.question_id).join(',') || '0'})`)
-          .limit(50));
+        // Only add the not-in condition if there are recent questions
+        if (recentQuestions && recentQuestions.length > 0) {
+            query = query.not('id', 'in', recentQuestions.map(q => q.question_id).join(','));
+        }
 
-      }
-  
-      // Final try: If all questions were answered recently, get the least recently answered ones
-      if (!questions?.length) {
-        const { data: oldestAnswered } = await supabase
-          .from('user_progress')
-          .select('question_id, created_at')
-          .eq('user_id', userEmail)
-          .order('created_at', { ascending: true })
-          .limit(50);
-  
-        ({ data: questions } = await supabase
-          .from('quiz_questions')
-          .select('*')
-          .in('id', oldestAnswered.map(q => q.question_id))
-          .limit(50));
-      }
-  
-      if (!questions?.length) {
-        console.error('No questions available at all');
-        throw new Error('No questions available in the database');
-      }
-  
-      // Select random question from available ones
-      const selectedQuestion = questions[Math.floor(Math.random() * questions.length)];
-      console.log('Selected question:', {
-        id: selectedQuestion.id,
-        difficulty: selectedQuestion.difficulty
-      });
+        let { data: questions, error } = await query;
 
-      const stats = await getQuestionStats(selectedQuestion.id);
-      console.log('Question stats:', stats);
-  
-      return {
-        ...selectedQuestion,
-        difficultyText: DIFFICULTY_LEVELS[selectedQuestion.difficulty],
-        stats
-      };
+        if (error) {
+            console.error('Error fetching questions:', error);
+            throw error;
+        }
+
+        // If no questions found at target difficulty, get any available questions
+        if (!questions?.length) {
+            console.log('No questions at target difficulty, fetching any available questions');
+            const { data: fallbackQuestions, error: fallbackError } = await supabase
+                .from('quiz_questions')
+                .select('*')
+                .limit(50);
+
+            if (fallbackError || !fallbackQuestions?.length) {
+                throw new Error('No questions available in the database');
+            }
+
+            questions = fallbackQuestions;
+        }
+
+        // Select random question from available ones
+        const selectedQuestion = questions[Math.floor(Math.random() * questions.length)];
+        console.log('Selected question:', {
+            id: selectedQuestion.id,
+            difficulty: selectedQuestion.difficulty
+        });
+
+        return {
+            ...selectedQuestion,
+            difficultyText: DIFFICULTY_LEVELS[selectedQuestion.difficulty],
+            stats: {
+                totalAttempts: 0,
+                successRate: 0
+            }
+        };
     } catch (error) {
-      console.error('Error getting next question:', error);
-      throw error;
+        console.error('Error getting next question:', error);
+        throw error;
     }
 }
 
