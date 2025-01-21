@@ -59,10 +59,27 @@ export async function initializeUserStats(userId) {
 async function calculateTargetDifficulty(userStats) {
     console.log('Calculating target difficulty for user:', userStats.user_id);
 
+    // Calculate overall success rate
+    const overallSuccessRate = userStats.questions_attempted > 0 
+        ? (userStats.questions_correct / userStats.questions_attempted) * 100 
+        : 0;
+
+    // Check advanced stats
+    const advancedSuccessRate = userStats.advanced_attempted > 0
+        ? (userStats.advanced_correct / userStats.advanced_attempted) * 100
+        : 0;
+
+    console.log('Overall stats:', {
+        overallSuccessRate,
+        advancedAttempts: userStats.advanced_attempted,
+        advancedCorrect: userStats.advanced_correct,
+        advancedSuccessRate
+    });
+
     // Get the user's last 25 attempts
     const { data: recentAttempts, error } = await supabase
       .from('user_progress')
-      .select('is_correct, created_at')  // Added created_at for debugging
+      .select('is_correct, created_at')
       .eq('user_id', userStats.user_id)
       .order('created_at', { ascending: false })
       .limit(25);
@@ -88,6 +105,12 @@ async function calculateTargetDifficulty(userStats) {
         successRate: recentSuccessRate,
         currentStreak: userStats.current_streak
     });
+
+    // New condition: if overall success rate is over 70%
+    if (overallSuccessRate > 70) {
+        console.log('Moving to advanced: Overall success rate > 70%');
+        return 'advanced';
+    }
   
     if (recentSuccessRate > 90) {
         return 'advanced';
