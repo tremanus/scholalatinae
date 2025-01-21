@@ -55,9 +55,9 @@ const Footer = () => {
               About Us
             </Typography>
             <List size="sm" sx={{ '--ListItem-paddingY': '4px', '--ListItem-paddingX': '0px' }}>
-              {['Features', 'Mission', 'Team'].map((item) => (
+              {['Mission', 'Team', 'Privacy', 'TOS'].map((item) => (
                 <ListItem key={item}>
-                  <Link href={`#${item.toLowerCase()}`} passHref style={{ width: '100%' }}>
+                  <Link href={`${item.toLowerCase()}`} passHref style={{ width: '100%' }}>
                     <Typography
                       level="body2"
                       sx={{ 
