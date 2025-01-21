@@ -50,7 +50,7 @@ export default function Header() {
       
       <nav>
         {session ? (
-          <button onClick={handleSignOut} className="auth-button">
+          <button onClick={handleSignOut} className="signup-button">
             Logout
           </button>
         ) : (

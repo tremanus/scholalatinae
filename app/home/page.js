@@ -1,7 +1,9 @@
 'use client';
 import { useSession } from 'next-auth/react';
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Dashboard from "@/src/components/sidebar";
+import { createClient } from '@supabase/supabase-js';
 import {
   Box,
   Typography,
@@ -26,30 +28,103 @@ import {
   TrendingUp as TrendingUpIcon,
 } from '@mui/icons-material';
 
+// Move Supabase client outside component
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+);
+
+const quickActions = [
+  {
+    title: 'Practice Questions',
+    description: 'Test your knowledge with exercises',
+    icon: <TrophyIcon />,
+    color: '#2e7d32',
+    link: '/practice'
+  },
+  {
+    title: 'Review Progress',
+    description: 'See your learning analytics',
+    icon: <TimelineIcon />,
+    color: '#1976d2',
+    link: '/stats'
+  },
+  {
+    title: 'Watch Lessons',
+    description: 'Explore video tutorials',
+    icon: <YouTubeIcon />,
+    color: '#9c27b0',
+    link: '/lessons'
+  },
+  {
+    title: 'Community',
+    description: 'Stack up against other learners',
+    icon: <GroupIcon />,
+    color: '#ed6c02',
+    link: '/leaderboard'
+  }
+];
+
 export default function Home() {
   const { data: session } = useSession();
   const [stats, setStats] = useState(null);
   const [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
-    const fetchStats = async () => {
+    let isMounted = true;
+
+    const checkUsernameAndFetchStats = async () => {
+      if (!session?.user?.email) {
+        setLoading(false);
+        return;
+      }
+
       try {
-        const response = await fetch('/api/user/stats');
-        if (response.ok) {
-          const data = await response.json();
-          setStats(data);
+        // Check username first
+        const { data: user, error: userError } = await supabase
+          .from('user_stats')
+          .select('has_set_username')
+          .eq('user_id', session.user.email)
+          .single();
+
+        if (userError) {
+          console.error('Error checking username:', userError);
+          if (isMounted) setLoading(false);
+          return;
+        }
+
+        if (!user?.has_set_username) {
+          router.push('/username');
+          return;
+        }
+
+        // Only fetch stats if we're still mounted and don't have them yet
+        if (isMounted && !stats) {
+          try {
+            const response = await fetch('/api/user/stats');
+            if (response.ok) {
+              const data = await response.json();
+              if (isMounted) setStats(data);
+            }
+          } catch (error) {
+            console.error('Error fetching stats:', error);
+          }
         }
       } catch (error) {
-        console.error('Error fetching stats:', error);
+        console.error('Unexpected error:', error);
       } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
     };
 
-    if (session?.user?.email) {
-      fetchStats();
-    }
-  }, [session]);
+    checkUsernameAndFetchStats();
+
+    // Cleanup function to prevent updates if component unmounts
+    return () => {
+      isMounted = false;
+    };
+  }, [session?.user?.email, router, stats]);
 
   // Calculate success rates for each difficulty
   const calculateSuccessRate = (correct, total) => {
@@ -62,37 +137,6 @@ export default function Home() {
     if (rate >= 60) return '#ff9800';
     return '#f44336';
   };
-
-  const quickActions = [
-    {
-      title: 'Practice Questions',
-      description: 'Test your knowledge with exercises',
-      icon: <TrophyIcon />,
-      color: '#2e7d32',
-      link: '/practice'
-    },
-    {
-      title: 'Review Progress',
-      description: 'See your learning analytics',
-      icon: <TimelineIcon />,
-      color: '#1976d2',
-      link: '/stats'
-    },
-    {
-      title: 'Watch Lessons',
-      description: 'Explore video tutorials',
-      icon: <YouTubeIcon />,
-      color: '#9c27b0',
-      link: '/videos'
-    },
-    {
-      title: 'Community',
-      description: 'Connect with fellow learners',
-      icon: <GroupIcon />,
-      color: '#ed6c02',
-      link: '/community'
-    }
-  ];
 
   if (loading) {
     return (
@@ -127,15 +171,18 @@ export default function Home() {
               src={session?.user?.image || '/default-avatar.png'} 
               alt={session?.user?.name || 'Profile'} 
               sx={{ 
-                width: 80, 
-                height: 80,
+                width: 120, 
+                height: 120,
                 border: '3px solid #fff',
                 boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
               }}
             />
             <Box>
-              <Typography variant="h4" gutterBottom sx={{ fontWeight: 600, color: '#1a1a1a' }}>
+              <Typography variant="h4" sx={{ fontWeight: 600, color: '#1a1a1a', mb: 0.5 }}>
                 Salve, {session?.user?.name || 'Scholar'}!
+              </Typography>
+              <Typography variant="subtitle1" sx={{ color: '#888', mb: 0.5 }}>
+                @{stats?.username || 'username'}
               </Typography>
               <Typography variant="subtitle1" sx={{ color: '#666' }}>
                 {stats?.best_streak ? `Best Streak: ${stats.best_streak} 🔥` : 'Start your learning journey!'}
@@ -242,6 +289,7 @@ export default function Home() {
                     boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
                   }
                 }}
+                onClick={() => router.push(action.link)}
               >
                 <CardContent>
                   <IconButton
