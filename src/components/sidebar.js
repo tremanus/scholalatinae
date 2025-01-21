@@ -59,16 +59,16 @@ function Dashboard({ children }) {
       onClick: () => router.push('/lessons'), // Navigate to /lessons
     },
     {
-      segment: 'games',
-      title: 'Games',
+      segment: 'leaderboard',
+      title: 'Leaderboard',
       icon: <SportsEsportsIcon />,
-      onClick: () => router.push('/games'), // Navigate to /games
+      onClick: () => router.push('/leaderboard'), // Navigate to /games
     },
     {
-        segment: 'resources',
-        title: 'Resources',
+        segment: 'donate',
+        title: 'Donate',
         icon: <MenuBookIcon />,
-        onClick: () => router.push('/resources'), // Navigate to /lessons
+        onClick: () => router.push('/donate'), // Navigate to /lessons
       },
   ];
 

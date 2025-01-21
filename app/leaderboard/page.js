@@ -42,7 +42,8 @@ function LeaderboardSection({ title, data = [], icon: Icon, valueLabel, getValue
             key={user.username}
             elevation={0}
             sx={{
-              p: 2,
+              px: 2,
+              py: 1,
               bgcolor: index < 3 ? 'rgba(25, 118, 210, 0.04)' : 'transparent',
               border: '1px solid',
               borderColor: index < 3 ? 'rgba(25, 118, 210, 0.2)' : 'rgba(0,0,0,0.08)',
@@ -66,16 +67,6 @@ function LeaderboardSection({ title, data = [], icon: Icon, valueLabel, getValue
               </Typography>
 
               <Stack direction="row" alignItems="center" spacing={2} flexGrow={1}>
-                <Avatar 
-                  sx={{ 
-                    width: 32, 
-                    height: 32,
-                    bgcolor: index < 3 ? '#1976d2' : 'rgba(0,0,0,0.08)',
-                  }}
-                >
-                  {user.username[0].toUpperCase()}
-                </Avatar>
-                
                 <Typography
                   variant="body1"
                   sx={{
@@ -83,7 +74,7 @@ function LeaderboardSection({ title, data = [], icon: Icon, valueLabel, getValue
                     color: index < 3 ? '#1976d2' : 'text.primary',
                   }}
                 >
-                  @{user.username}
+                  {user.username}
                 </Typography>
               </Stack>
 

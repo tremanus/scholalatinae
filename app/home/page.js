@@ -47,7 +47,7 @@ const quickActions = [
     description: 'See your learning analytics',
     icon: <TimelineIcon />,
     color: '#1976d2',
-    link: '/stats'
+    link: '/home'
   },
   {
     title: 'Watch Lessons',
