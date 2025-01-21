@@ -1,15 +1,44 @@
 'use client';
-import Link from 'next/link'; // Use Next.js's Link component
-import { signIn, signOut, useSession } from "next-auth/react"; // NextAuth hooks
+import Link from 'next/link';
+import { signIn, signOut, useSession } from "next-auth/react";
 import { useRouter } from 'next/navigation';
-import './header.css'; // Ensure CSS is correctly imported
+import './header.css';
 
 export default function Header() {
-  const { data: session } = useSession(); // Access session data
-  const router = useRouter(); // Initialize the useRouter hook
+  const { data: session } = useSession();
+  const router = useRouter();
 
   const handleSignIn = () => {
-    router.push('/signup'); // Redirect to login page
+    router.push('/signup');
+  };
+
+  const handleGoogleSignIn = async () => {
+    try {
+      const result = await signIn('google', {
+        redirect: false,
+        callbackUrl: '/home'
+      });
+      
+      if (result?.error) {
+        console.error('Sign in error:', result.error);
+      } else if (result?.url) {
+        router.push('/home');
+      }
+    } catch (error) {
+      console.error('Sign in error:', error);
+    }
+  };
+
+  const handleSignOut = async () => {
+    try {
+      await signOut({
+        redirect: false,
+        callbackUrl: '/'
+      });
+      router.push('/');
+    } catch (error) {
+      console.error('Sign out error:', error);
+    }
   };
 
   return (
@@ -21,15 +50,13 @@ export default function Header() {
       
       <nav>
         {session ? (
-          // User is logged in
-          <button onClick={() => signOut()} className="auth-button">
+          <button onClick={handleSignOut} className="auth-button">
             Logout
           </button>
         ) : (
-          // User is not logged in
           <>
-          <button className="login-button" onClick={() => signIn('google')}>Login</button>
-          <button className="signup-button" onClick={handleSignIn}>Get Started</button>
+            <button className="login-button" onClick={handleGoogleSignIn}>Login</button>
+            <button className="signup-button" onClick={handleSignIn}>Get Started</button>
           </>
         )}
       </nav>

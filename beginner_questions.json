@@ -1,0 +1,1780 @@
+{
+    "questions": [
+      {
+        "question": "The tourists amble along the path. Based on its Latin root, amble means:",
+        "options": ["run", "laugh", "sit", "walk"],
+        "correct_answer": "walk"
+      },
+      {
+        "question": "Ego dē Olympō ad terram dēscendō. Sum nūntius et deus Rōmānus. Quis sum?",
+        "options": ["Mercurius", "Neptūnus", "Mars", "Apollō"],
+        "correct_answer": "Mercurius"
+      },
+      {
+        "question": "Based on its Latin root, Spain’s Canary Islands had a large number of:",
+        "options": ["horses", "dogs", "pigs", "snakes"],
+        "correct_answer": "dogs"
+      },
+      {
+        "question": "Which woodland deity would a Roman call upon while hunting?",
+        "options": ["Mars", "Venus", "Bacchus", "Diana"],
+        "correct_answer": "Diana"
+      },
+      {
+        "question": "Patrōnus sum. In vīllā prope ātrium labōrō et semper scrībō. Multōs librōs et epistulās habeō. Ubi sum?",
+        "options": ["in tablīnō", "in culīnā", "in monte", "in flūmine"],
+        "correct_answer": "in tablīnō"
+      },
+      {
+        "question": "Why would you use the Latin abbreviation P.S. (post scriptum) in an email?",
+        "options": ["to greet the recipient", "to add something after the message", "to introduce the subject of the message", "to provide an example"],
+        "correct_answer": "to add something after the message"
+      },
+      {
+        "question": "What did a Roman call multi-level apartment buildings in the city?",
+        "options": ["īnsulae", "fora", "templa", "thermae"],
+        "correct_answer": "īnsulae"
+      },
+      {
+        "question": "When teachers say “Meā culpā,” what are they indicating?",
+        "options": ["They are admitting a mistake.", "It is the end of class.", "There is a new assignment.", "It is time for partner work."],
+        "correct_answer": "They are admitting a mistake."
+      },
+      {
+        "question": "Septem nautae <u>ab Italiā</u> nāvigābant.",
+        "options": ["around Italy", "to Italy", "from Italy", "near Italy"],
+        "correct_answer": "from Italy"
+      },
+      {
+        "question": "Sed <u>hodiē</u> ūnus nauta sōlus est in parvā īnsulā.",
+        "options": ["today", "always", "now", "however"],
+        "correct_answer": "today"
+      },
+      {
+        "question": "Nauta, nōmine Decimus, <u>est</u> perterritus.",
+        "options": ["to be", "are", "was", "is"],
+        "correct_answer": "is"
+      },
+      {
+        "question": "Nauta cibum nōn videt <u>et</u> aquam nōn habet.",
+        "options": ["or", "but", "not", "and"],
+        "correct_answer": "and"
+      },
+      {
+        "question": "Ecce! <u>Magna silva</u> est in parvā īnsulā.",
+        "options": ["In a large forest", "A large forest", "Across the large forest", "From the large forest"],
+        "correct_answer": "A large forest"
+      },
+      {
+        "question": "<u>Per magnam</u> silvam timidē ambulat.",
+        "options": ["Through the large forest", "Near the large forest", "Out of the large forest", "The large forest"],
+        "correct_answer": "Through the large forest"
+      },
+      {
+        "question": "Nauta puellam in silvā <u>videt.</u>",
+        "options": ["was seeing", "were seeing", "sees", "to see"],
+        "correct_answer": "sees"
+      },
+      {
+        "question": "Decimus rogat, <u>“Quid nōmen est tibi?”</u>",
+        "options": ["What are you doing?", "What is your name?", "Where are you?", "Where are you going?"],
+        "correct_answer": "What is your name?"
+      },
+      {
+        "question": "Decimus rogat, “<u>Ubi</u> habitās?”",
+        "options": ["Who", "What", "Where", "Why"],
+        "correct_answer": "Where"
+      },
+      {
+        "question": "Tum Decimus rogat, “<u>Habēsne</u> aquam?”",
+        "options": ["Where do you have", "Do you have", "Why do you have", "Who has"],
+        "correct_answer": "Do you have"
+      },
+      {
+        "question": "Tiberīna respondet, “<u>Ita vērō.</u> Ego et pater aquam habēmus.”",
+        "options": ["Hello", "Goodbye", "No", "Yes"],
+        "correct_answer": "Yes"
+      },
+      {
+        "question": "Decimus dīcit, “<u>Ego</u> et multī nautae ad Graeciam nāvigābāmus.”",
+        "options": ["you", "we", "he", "I"],
+        "correct_answer": "I"
+      },
+      {
+        "question": "Who was the Roman goddess of marriage and the queen of the gods?",
+        "options": ["Minerva", "Vesta", "Diana", "Juno"],
+        "correct_answer": "Juno"
+      },
+      {
+        "question": "What should you say when leaving a group of friends?",
+        "options": ["Cūr?", "Quot?", "Salvē!", "Valēte!"],
+        "correct_answer": "Valēte!"
+      },
+      {
+        "question": "What was the paterfamiliās in charge of in ancient Rome?",
+        "options": ["the household", "the government", "the army", "the gladiator school"],
+        "correct_answer": "the household"
+      },
+      {
+        "question": "According to its Latin root, if something is a multi-unit structure, what does it have?",
+        "options": ["small units", "square units", "many units", "empty units"],
+        "correct_answer": "many units"
+      },
+      {
+        "question": "Solve the following equation: V + V = _____.",
+        "options": ["III", "VI", "VIII", "X"],
+        "correct_answer": "X"
+      },
+      {
+        "question": "Stellar, solar, and lunar all describe objects that can be found where?",
+        "options": ["in caelō", "in silvā", "in rīvō", "in forō"],
+        "correct_answer": "in caelō"
+      },
+      {
+        "question": "Why would a worker typically receive a bonus?",
+        "options": ["Their work was late.", "Their work was average.", "Their work needed correction.", "Their work was good."],
+        "correct_answer": "Their work was good."
+      },
+      {
+        "question": "What was the most popular and largest location for chariot racing in the city of Rome?",
+        "options": ["Colosseum", "Circus Maximus", "Forum", "Pantheon"],
+        "correct_answer": "Circus Maximus"
+      },
+      {
+        "question": "Which god ruled the Underworld and possessed its mineral wealth?",
+        "options": ["Mars", "Mercury", "Pluto", "Apollo"],
+        "correct_answer": "Pluto"
+      },
+      {
+        "question": "What legendary Trojan led refugees from the fall of Troy across the Mediterranean Sea to establish a homeland in Italy?",
+        "options": ["Aeneas", "Achilles", "Hector", "Romulus"],
+        "correct_answer": "Aeneas"
+      },
+      {
+        "question": "What area was NOT physically connected to the Roman Empire by land?",
+        "options": ["Hispānia", "Britannia", "Germānia", "Gallia"],
+        "correct_answer": "Britannia"
+      },
+      {
+        "question": "Which Latin phrase could you use to encourage someone to hurry?",
+        "options": ["cum laude", "e pluribus unum", "nota bene", "tempus fugit"],
+        "correct_answer": "tempus fugit"
+      },
+      {
+        "question": "When a list ends with etc., it indicates that",
+        "options": ["the list is very important", "the list is complete", "there are more items", "the last item is incorrect"],
+        "correct_answer": "there are more items"
+      },
+      {
+        "question": "Solve the following equation: V - I =",
+        "options": ["III", "IV", "VI", "IX"],
+        "correct_answer": "IV"
+      },
+      {
+        "question": "October, octet, and octave are all related to the Latin word for",
+        "options": ["eye", "ocean", "eight", "music"],
+        "correct_answer": "eight"
+      },
+      {
+        "question": "When sailors circumnavigate an island, they sail",
+        "options": ["across it", "around it", "through it", "under it"],
+        "correct_answer": "around it"
+      },
+      {
+        "question": "Mārcus <u>est</u> agricola.",
+        "options": ["are", "was", "to be", "is"],
+        "correct_answer": "is"
+      },
+    {
+        "question": "Mārcus <u>multōs agrōs</u> habet.",
+        "options": ["many fields", "near many fields", "toward many fields", "with many fields"],
+        "correct_answer": "many fields"
+    },
+    {
+        "question": "Mārcus per agrōs <u>laetē</u> ambulat.",
+        "options": ["happy", "happily", "happiness", "to be happy"],
+        "correct_answer": "happily"
+    },
+    {
+        "question": "Mārcus terram <u>arāre</u> temptat.",
+        "options": ["to plow", "are plowing", "was plowing", "were plowing"],
+        "correct_answer": "to plow"
+    },
+    {
+        "question": "<u>Mārcus</u> semper labōrat.",
+        "options": ["Marcus", "with Marcus", "near Marcus", "to Marcus"],
+        "correct_answer": "Marcus"
+    },
+    {
+        "question": "Mārcus <u>cum familiā</u> in casā habitat.",
+        "options": ["his family", "near his family", "around his family", "with his family"],
+        "correct_answer": "with his family"
+    },
+    {
+        "question": "Mārcus <u>virīs et fēminīs</u> multum cibum ex agrīs dat.",
+        "options": ["a man and a woman", "to men and women", "from men and women", "with man and woman"],
+        "correct_answer": "to men and women"
+    },
+    {
+        "question": "Mārcus vītam dūram <u>sed</u> laetam habet.",
+        "options": ["not", "and", "but", "because"],
+        "correct_answer": "but"
+    },
+    {
+        "question": "Lūcius <u>erat</u> poēta.",
+        "options": ["were", "was", "are", "is"],
+        "correct_answer": "was"
+    },
+    {
+        "question": "Lūcius cantābat; virī et fēminae Lūcium <u>laudābant.</u>",
+        "options": ["were praising", "is praising", "are praising", "to praise"],
+        "correct_answer": "were praising"
+    },
+    {
+        "question": "Pecūniam Lūciō <u>dabant.</u>",
+        "options": ["They used to give", "You used to give", "We used to give", "I used to give"],
+        "correct_answer": "They used to give"
+    },
+    {
+        "question": "Hodiē virī et fēminae Lūcium <u>nōn</u> laudant.",
+        "options": ["well", "always", "when", "not"],
+        "correct_answer": "not"
+    },
+    {
+        "question": "Hodiē Lūcius <u>prope agrōs</u> per viam ambulat.",
+        "options": ["from the fields", "near the fields", "across the fields", "to the fields"],
+        "correct_answer": "near the fields"
+    },
+    {
+        "question": "Mārcus aquam ad agrōs <u>portat.</u>",
+        "options": ["was carrying", "are carrying", "is carrying", "were carrying"],
+        "correct_answer": "is carrying"
+    },
+    {
+        "question": "Mārcus Lūcium videt et rogat, <u>“Quis es tū?”</u>",
+        "options": ["Who are you?", "What are you doing?", "Why are you here?", "Where are you from?"],
+        "correct_answer": "Who are you?"
+    },
+    {
+        "question": "Lūcius respondet, “<u>Ego</u> sum Lūcius.”",
+        "options": ["We", "you", "me", "I"],
+        "correct_answer": "I"
+    },
+    {
+        "question": "Lūcius rogat, “<u>Tūne aquam habēs?</u>”",
+        "options": ["Where is there water?", "Who has water?", "Do you have water?", "Is the water yours?"],
+        "correct_answer": "Do you have water?"
+    },
+    {
+        "question": "Mārcus respondet, “Ita vērō. Ecce! <u>Potā</u> aquam!”",
+        "options": ["To drink", "Drink", "Drinks", "Does drink"],
+        "correct_answer": "Drink"
+    },
+    {
+        "question": "What is the opposite of the response “Minimē”?",
+        "options": ["Salvē", "Ita", "Ante", "Nōn"],
+        "correct_answer": "Ita"
+    },
+    {
+        "question": "Which of the following was a common piece of clothing worn by all Romans?",
+        "options": ["taberna", "fenestra", "tunica", "hōra"],
+        "correct_answer": "tunica"
+    },
+    {
+        "question": "Based on its Latin root, a constellation is a group of",
+        "options": ["birds", "islands", "stars", "ships"],
+        "correct_answer": "stars"
+    },
+    {
+        "question": "Fabulous, fable, and fib are all related to the Latin word for a",
+        "options": ["story", "spectacle", "valuable object", "library"],
+        "correct_answer": "story"
+    },
+    {
+        "question": "An ātrium, a cubiculum, and a tablīnum could all be found",
+        "options": ["in vīllā", "in silvā", "in agrō", "in amphitheātrō"],
+        "correct_answer": "in vīllā"
+    },
+    {
+        "question": "From this series of odd Roman numerals, I, III, V, _____, IX, which Roman numeral is missing?",
+        "options": ["II", "IV", "VII", "VIII"],
+        "correct_answer": "VII"
+    },
+    {
+        "question": "What abbreviation indicates that a reader should pay close attention to what follows?",
+        "options": ["N.B.", "a.m.", "etc.", "P.S."],
+        "correct_answer": "N.B."
+    },
+    {
+        "question": "What is Latin for “out of many, one,” the motto held by the eagle on the Great Seal of the United States of America?",
+        "options": ["excelsior", "carpe diem", "in deo speramus", "e pluribus unum"],
+        "correct_answer": "e pluribus unum"
+    },
+    {
+        "question": "The three Olympian brothers whose realms were the sky, the Underworld, and the seas were Jupiter, Pluto, and",
+        "options": ["Mars", "Neptune", "Apollo", "Vulcan"],
+        "correct_answer": "Neptune"
+    },
+    {
+        "question": "Flāvia est <u>parva puella.</u>",
+        "options": ["a poor girl", "a smart girl", "a happy girl", "a little girl"],
+        "correct_answer": "a little girl"
+    },
+    {
+        "question": "<u>Quārtus</u> est parvus puer.",
+        "options": ["near Quartus", "to Quartus", "with Quartus", "Quartus"],
+        "correct_answer": "Quartus"
+    },
+    {
+      "question": "Pater <u>Flāviae</u> est poēta et pater Quārtī est agricola.",
+      "options": ["Flavia", "of Flavia", "by Flavia", "from Flavia"],
+      "correct_answer": "of Flavia"
+  },
+  {
+      "question": "Patrēs semper <u>clāmābant</u> et nōn erant amīcī.",
+      "options": ["were shouting", "was shouting", "are shouting", "to shout"],
+      "correct_answer": "were shouting"
+  },
+  {
+      "question": "Patrēs sunt inimīcī <u>sed</u> Flāvia et Quārtus sunt amīcī.",
+      "options": ["and", "not", "because", "but"],
+      "correct_answer": "but"
+  },
+  {
+      "question": "<u>Hodiē</u> amīcī in viā per silvam ambulant.",
+      "options": ["Today", "Always", "Slowly", "Happily"],
+      "correct_answer": "Today"
+  },
+  {
+      "question": "Flāvia et Quārtus flōrēs in silvā sine patribus <u>spectāre</u> amant.",
+      "options": ["are looking at", "to look at", "was looking at", "were looking at"],
+      "correct_answer": "to look at"
+  },
+  {
+      "question": "Amīcī <u>cibum et aquam</u> portant.",
+      "options": ["of food and water", "to food and water", "food and water", "with food and water"],
+      "correct_answer": "food and water"
+  },
+  {
+      "question": "<u>Ecce!</u> Flāvia et Quārtus magnum equum in mediā silvā vident.",
+      "options": ["Hello!", "Look!", "No!", "What!"],
+      "correct_answer": "Look!"
+  },
+  {
+      "question": "Flāvia et Quārtus <u>ad equum</u> ambulant.",
+      "options": ["toward the horse", "with the horse", "from the horse", "around the horse"],
+      "correct_answer": "toward the horse"
+  },
+  {
+      "question": "Puer equum vocat et clāmat, “<u>Ambulā</u> ad nōs!”",
+      "options": ["To walk", "He was walking", "Walk", "They were walking"],
+      "correct_answer": "Walk"
+  },
+  {
+      "question": "Equus ad amīcōs nōn ambulat sed ab amīcīs <u>festīnat.</u>",
+      "options": ["are hurrying", "was hurrying", "were hurrying", "is hurrying"],
+      "correct_answer": "is hurrying"
+  },
+  {
+      "question": "Amīcī <u>ā viā</u> post equum ambulant.",
+      "options": ["the road", "away from the road", "down the road", "near the road"],
+      "correct_answer": "away from the road"
+  },
+  {
+      "question": "Flāvia rogat, “<u>Vidēsne viam?</u>”",
+      "options": ["When did you see the road?", "You don’t see the road, do you?", "Do you see the road?", "And did you see the road?"],
+      "correct_answer": "Do you see the road?"
+  },
+  {
+    "question": "Quārtus timidus circumspectat et respondet, “<u>Ego</u> viam nōn videō.”",
+    "options": ["you", "I", "me", "us"],
+    "correct_answer": "I"
+  },
+  {
+    "question": "Puella rogat, “<u>Ubi sumus</u>?”",
+    "options": ["Where is it?", "Where are you?", "Where are we?", "Where am I?"],
+    "correct_answer": "Where are we?"
+},
+{
+    "question": "Puer <u>timidē</u> lacrimat.",
+    "options": ["fear", "to fear", "fearful", "fearfully"],
+    "correct_answer": "fearfully"
+},
+{
+    "question": "Puella aquam <u>puerō</u> dat.",
+    "options": ["to the boy", "of the boy", "from the boy", "with the boy"],
+    "correct_answer": "to the boy"
+},
+  {
+      "question": "What is the best response to Quid agis?",
+      "options": ["Ubi?", "Quot?", "Bene!", "Valēte!"],
+      "correct_answer": "Bene!"
+  },
+  {
+      "question": "Where in ancient Rome would you find an atrium?",
+      "options": ["on the road", "in a house", "in a forum", "in a harbor"],
+      "correct_answer": "in a house"
+  },
+  {
+      "question": "Students attend a naval institute to learn about",
+      "options": ["anatomy", "agriculture", "sculpting", "ships"],
+      "correct_answer": "ships"
+  },
+  {
+      "question": "Quis est frater Diānae?",
+      "options": ["Apollō", "Plūtō", "Mercurius", "Neptūnus"],
+      "correct_answer": "Apollō"
+  },
+  {
+      "question": "In which Roman province was the Nile River located?",
+      "options": ["Britannia", "Germania", "Aegyptus", "Gallia"],
+      "correct_answer": "Aegyptus"
+  },
+  {
+      "question": "If you wanted to encourage your friend to live a full life, you might say",
+      "options": ["Minimē", "Ē plūribus ūnum", "Tacēte!", "Carpe diem!"],
+      "correct_answer": "Carpe diem!"
+  },
+  {
+      "question": "Which Roman numeral represents the largest amount?",
+      "options": ["IX", "III", "V", "VIII"],
+      "correct_answer": "IX"
+  },
+  {
+      "question": "What was a common occurrence at the Colosseum?",
+      "options": ["poetry performances", "gladiatorial fights", "cold baths", "diplomatic meetings"],
+      "correct_answer": "gladiatorial fights"
+  },
+  {
+      "question": "Based on the word’s Latin root, a portable device is easy to",
+      "options": ["carry", "throw", "find", "use"],
+      "correct_answer": "carry"
+  },
+  {
+      "question": "What animal would typically play a major part in the action at the Circus Maximus?",
+      "options": ["elephantus", "equus", "ursus", "leō"],
+      "correct_answer": "equus"
+  },
+  {
+      "question": "What Roman god of music was often seen with a lyre?",
+      "options": ["Mars", "Mercury", "Apollo", "Vulcan"],
+      "correct_answer": "Apollo"
+  },
+  {
+      "question": "Quis est pater Minervae?",
+      "options": ["Iuppiter", "Neptūnus", "Saturnus", "Plūtō"],
+      "correct_answer": "Iuppiter"
+  },
+  {
+      "question": "A Roman woman would often wear a _____ over her stola.",
+      "options": ["tunica", "solea", "toga", "palla"],
+      "correct_answer": "palla"
+  },
+  {
+      "question": "It’s time for bed! In a vīlla, where would the father and mother sleep?",
+      "options": ["in cubiculō", "in vestibulō", "in tablīnō", "in culīnā"],
+      "correct_answer": "in cubiculō"
+  },
+  {
+      "question": "VII et II sunt _____.",
+      "options": ["III", "V", "IX", "X"],
+      "correct_answer": "IX"
+  },
+  {
+      "question": "If you met Antonia and Aula talking together in the Forum, how would you greet them?",
+      "options": ["Salvē!", "Valē!", "Salvēte!", "Valēte!"],
+      "correct_answer": "Salvēte!"
+  },
+  {
+      "question": "The words were audible all over the building. Audible comes from the Latin verb meaning to",
+      "options": ["see", "hear", "write", "read"],
+      "correct_answer": "hear"
+  },
+  {
+      "question": "If you wanted to scare a thief away from your home, which Latin phrase would you put on your door?",
+      "options": ["Carpe diem!", "Ē plūribus ūnum!", "Cavē canem!", "Tempus fugit!"],
+      "correct_answer": "Cavē canem!"
+  },
+    {
+        "question": "In an announcement of a person’s death, which phrase would you most likely see?",
+        "options": ["ab urbe conditā", "mare nostrum", "festīnā lentē", "in memoriam"],
+        "correct_answer": "in memoriam"
+    },
+    {
+        "question": "Which is not an animal?",
+        "options": ["lupus", "porcus", "lūdus", "equus"],
+        "correct_answer": "lūdus"
+    },
+    {
+        "question": "The peacock is the symbol of which goddess?",
+        "options": ["Minerva", "Juno", "Diana", "Vesta"],
+        "correct_answer": "Juno"
+    },
+    {
+        "question": "One who has made a mistake should say,",
+        "options": ["Carpe diem!", "Meā culpā!", "Bene!", "Salvē!"],
+        "correct_answer": "Meā culpā!"
+    },
+    {
+        "question": "A Latin teacher asking you your name would say",
+        "options": ["Quid est nōmen tibi?", "Suntne laetī?", "Quota hōra est?", "Ubi sunt discipulī?"],
+        "correct_answer": "Quid est nōmen tibi?"
+    },
+    {
+        "question": "Ubi servī cēnam parant?",
+        "options": ["in cubiculō", "in ātriō", "in hortō", "in culīnā"],
+        "correct_answer": "in culīnā"
+    },
+    {
+        "question": "Based on the Latin root, a person ambling through the woods is",
+        "options": ["clearing a trail", "hunting animals", "walking the paths", "calling to a friend"],
+        "correct_answer": "walking the paths"
+    },
+    {
+        "question": "Where would a Roman buy new sandals?",
+        "options": ["in tabernā", "in cūriā", "in vīllā rūsticā", "in templō"],
+        "correct_answer": "in tabernā"
+    },
+    {
+        "question": "The Tiber River is located in",
+        "options": ["Gallia", "Italia", "Graecia", "Hispānia"],
+        "correct_answer": "Italia"
+    },
+    {
+        "question": "Latin class is so much fun! To express your surprise at how quickly it passes, you might exclaim,",
+        "options": ["Tempus fugit!", "Annō Dominī!", "Ē plūribus ūnum!", "Et cētera!"],
+        "correct_answer": "Tempus fugit!"
+    },
+    {
+        "question": "The teacher said, “That’s a novel idea!” Novel means",
+        "options": ["wise", "bad", "dangerous", "new"],
+        "correct_answer": "new"
+    },
+    {
+        "question": "What is the Roman name for the Greek god Hermes?",
+        "options": ["Mercury", "Mars", "Vulcan", "Pluto"],
+        "correct_answer": "Mercury"
+    },
+    {
+        "question": "The Roman numerals IV + VI =",
+        "options": ["VII", "VIII", "IX", "X"],
+        "correct_answer": "X"
+    },
+    {
+        "question": "A Latin teacher asking the name of a person in a picture would ask",
+        "options": ["Ubi est?", "Quid agis?", "Quis est?", "Estne laetus?"],
+        "correct_answer": "Quis est?"
+    },
+    {
+        "question": "Who in ancient Rome wore a toga praetexta?",
+        "options": ["senator", "mater", "libertus", "servus"],
+        "correct_answer": "senator"
+    },
+    {
+        "question": "What is the best translation of the Latin motto festīnā lentē?",
+        "options": ["hurry slowly", "happy birthday", "time flies", "seize the day"],
+        "correct_answer": "hurry slowly"
+    },
+    {
+        "question": "Based on the Latin root, who would be considered urbane?",
+        "options": ["a sailor", "a city dweller", "a shepherd", "a nymph"],
+        "correct_answer": "a city dweller"
+    },
+    {
+        "question": "At what large amphitheater would the Romans watch gladiatorial fights and animal hunts?",
+        "options": ["the Forum", "the Curia", "the Colosseum", "the Pantheon"],
+        "correct_answer": "the Colosseum"
+    },
+    {
+        "question": "If a bird flew in a straight line from Hispania to Graecia, it would be flying",
+        "options": ["north", "south", "east", "west"],
+        "correct_answer": "east"
+    },
+    {
+        "question": "What Latin abbreviation means “and the rest”?",
+        "options": ["P.S.", "a.m.", "N.B.", "etc."],
+        "correct_answer": "etc."
+    },
+    {
+        "question": "The malevolent king lived in a castle at the top of the mountain.",
+        "options": ["old", "wise", "faithful", "evil"],
+        "correct_answer": "evil"
+    },
+    {
+        "question": "Which animal has four legs?",
+        "options": ["piscis", "avis", "equus", "homō"],
+        "correct_answer": "equus"
+    },
+    {
+        "question": "What animal is associated with the founding of Rome?",
+        "options": ["elephant", "rabbit", "goose", "wolf"],
+        "correct_answer": "wolf"
+    },
+    {
+        "question": "The Latin phrase ita vērō is the opposite of",
+        "options": ["bene", "minimē", "salvē", "grātiās"],
+        "correct_answer": "minimē"
+    },
+    {
+        "question": "What main room of a Roman house had an impluvium and compluvium as well as a shrine to the household gods?",
+        "options": ["cubiculum", "ātrium", "culīna", "trīclīnium"],
+        "correct_answer": "ātrium"
+    },
+    {
+        "question": "What is the Latin for “in God we hope,” the motto of Brown University?",
+        "options": ["in locō parentis", "in tōtō", "in deō spērāmus", "in vīnō vēritās"],
+        "correct_answer": "in deō spērāmus"
+    },
+    {
+        "question": "Cleopatra was multilingual.",
+        "options": ["a lover of many cultures", "a speaker of many languages", "a citizen of many countries", "a woman of many facial expressions"],
+        "correct_answer": "a speaker of many languages"
+    },
+    {
+        "question": "Where would a Roman go to shop, to socialize, and to hear speeches?",
+        "options": ["Forum", "Colosseum", "Circus Maximus", "Pantheon"],
+        "correct_answer": "Forum"
+    },
+    {
+        "question": "In the abbreviation A.D., the letter “A” stands for the Latin word",
+        "options": ["Ad", "Annō", "Aut", "Ab"],
+        "correct_answer": "Anno"
+    },
+    {
+        "question": "The farmers could not inhabit the rocky coastal area.",
+        "options": ["protect", "plow", "clean up", "live in"],
+        "correct_answer": "live in"
+    },
+    {
+        "question": "The motto labor omnia vincit best reflects the actions of a Latin student who",
+        "options": ["sleeps in class", "always does his work", "misses many days of school", "is friendly to the teacher"],
+        "correct_answer": "always does his work"
+    },
+    {
+        "question": "In the abbreviation a.m., the letter a stands for the Latin word",
+        "options": ["aut", "ad", "ab", "ante"],
+        "correct_answer": "ante"
+    },
+    {
+        "question": "Which Roman god rules the Underworld?",
+        "options": ["Neptune", "Mars", "Pluto", "Apollo"],
+        "correct_answer": "Pluto"
+    },
+    {
+        "question": "In which room of a vīlla would Romans usually entertain friends at dinner?",
+        "options": ["ātrium", "cubiculum", "lātrīna", "trīclīnium"],
+        "correct_answer": "trīclīnium"
+    },
+    {
+        "question": "What was the religious, economic, political, and social center of ancient Rome?",
+        "options": ["Forum Rōmānum", "Colossēum", "Via Appia", "Circus Maximus"],
+        "correct_answer": "Forum Rōmānum"
+    },
+    {
+        "question": "To which question would “Bene!” be an appropriate answer?",
+        "options": ["Quid agis?", "Quid est nōmen tibi?", "Quis est?", "Quis es?"],
+        "correct_answer": "Quid agis?"
+    },
+    {
+        "question": "The worker’s <u>per annum</u> income was enough to meet their needs.",
+        "options": ["daily", "weekly", "monthly", "yearly"],
+        "correct_answer": "yearly"
+    },
+    {
+        "question": "The long snout and watchful eyes of the creature made it appear <u>lupine.</u>",
+        "options": ["cat-like", "goose-like", "wolf-like", "cow-like"],
+        "correct_answer": "wolf-like"
+    },
+    {
+        "question": "The youth left home in search of <u>pecuniary</u> rewards.",
+        "options": ["education", "money", "freedom", "adventure"],
+        "correct_answer": "money"
+    },
+    {
+        "question": "The abbreviation N.B. stands for the Latin phrase Notā Bene which means",
+        "options": ["Note well", "Make haste", "And the rest", "Farewell"],
+        "correct_answer": "Note well"
+    },
+    {
+        "question": "If your older sister says your behavior is puerile, she means you are",
+        "options": ["childish", "sad", "clever", "sick"],
+        "correct_answer": "childish"
+    },
+    {
+        "question": "Based on your knowledge of Latin, the purpose of a convocation is to",
+        "options": ["give people news", "assign people to help", "call people together", "ask people their opinion"],
+        "correct_answer": "call people together"
+    },
+    {
+        "question": "What should the class do when the teacher says, “Sedēte?”",
+        "options": ["stand", "be quiet", "leave", "remain seated"],
+        "correct_answer": "remain seated"
+    },
+    {
+        "question": "Who was the Roman goddess of wisdom, war, and weaving?",
+        "options": ["Juno", "Diana", "Minerva", "Venus"],
+        "correct_answer": "Minerva"
+    },
+    {
+        "question": "Where would a Roman typically go to watch chariot racing?",
+        "options": ["templum", "Forum", "cubiculum", "Circus Maximus"],
+        "correct_answer": "Circus Maximus"
+    },
+    {
+      "question": "Plīnius epistulam <u>stilō</u> scrīpsit.",
+      "options": ["with a pen", "for a pen", "of a pen", "a pen"],
+      "correct_answer": "with a pen"
+    },
+    {
+      "question": "Est saepe difficile mihi <u>dormīre</u>.",
+      "options": ["will sleep", "have slept", "to sleep", "are sleeping"],
+      "correct_answer": "to sleep"
+    },
+    {
+      "question": "Amīcus meus ad thermās cum <u>patre</u> vēnit.",
+      "options": ["of his father", "for his father", "his father", "with his father"],
+      "correct_answer": "with his father"
+    },
+    {
+      "question": "Agricola multās vaccās in agrō <u>cūrābat</u>.",
+      "options": ["is taking care of", "was taking care of", "will take care of", "has taken care of"],
+      "correct_answer": "was taking care of"
+    },
+    {
+        "question": "Cleopatra erat _____ Aegyptī.",
+        "options": ["rēgīna", "rēgīnae", "rēgīnam", "rēgīnā"],
+        "correct_answer": "rēgīna"
+    },
+    {
+        "question": "Pater cibum optimum <u>hospitī praeclārō</u> dabat.",
+        "options": ["of his famous guest", "to his famous guest", "from his famous guest", "by his famous guest"],
+        "correct_answer": "to his famous guest"
+    },
+    {
+        "question": "Tempestās est semper splendida. Heri sōl lūcēbat, _____ sōl lūcet, et crās sōl lūcēbit.",
+        "options": ["numquam", "statim", "saepe", "hodiē"],
+        "correct_answer": "hodiē"
+    },
+    {
+      "question": "<u>Cantābisne</u> mihi pulchrum carmen post cēnam?",
+      "options": ["Will you sing", "Were you singing", "Are you singing", "Did you sing"],
+      "correct_answer": "Will you sing"
+    },
+    {
+      "question": "Nōmina omnium animālium <u>scīvistī</u>.",
+      "options": ["I knew", "You knew", "He knew", "We knew"],
+      "correct_answer": "You knew"
+    },
+    {
+        "question": "Trāns rīvum et per silvās ad casam mātris ā casā nostrā prōcēdimus. In this sentence, what is our final destination?",
+        "options": ["a river", "the woods", "mother’s house", "our house"],
+        "correct_answer": "mother’s house"
+    },
+    {
+        "question": "“<u>Nōlī</u>, pater, in ātriō <u>clāmāre</u>! Īnfāns dormit!”",
+        "options": ["He shouted", "Don’t shout", "Why not shout", "No one shouts"],
+        "correct_answer": "Don’t shout"
+    },
+    {
+        "question": "Fīlius meus in peristȳliō <u>quiētē</u> legit.",
+        "options": ["to quiet", "quiet", "quiets", "quietly"],
+        "correct_answer": "quietly"
+    },
+    {
+        "question": "Sum optimus amīcus hominis. Saepe dormiō ad pedēs dominī meī. Cum dominō ambulāre amō. Quid sum?",
+        "options": ["avis", "canis", "piscis", "ursus"],
+        "correct_answer": "canis"
+    },
+    {
+        "question": "Venīte, _____, ad forum nōbīscum!",
+        "options": ["Mārce et Lūcī", "fīlia mea", "mercātor", "tū"],
+        "correct_answer": "Mārce et Lūcī"
+    },
+    {
+        "question": "Aenēās Dīdōnem amat <u>sed</u> necesse est Troiānīs discēdere.",
+        "options": ["and", "not", "because", "but"],
+        "correct_answer": "but"
+    },
+    {
+        "question": "To what question would the response, “Pecūnia est in saccō,” make sense?",
+        "options": ["Estne pecūnia gravis?", "Ubi est pecūnia?", "Cūr pecūniam habēs?", "Quandō pecūniam invēnistī?"],
+        "correct_answer": "Ubi est pecūnia?"
+    },
+    {
+        "question": "Lūcia decem rosās habet. Lūcia quattuor Cornēliae dat. Quot nunc habet Lūcia?",
+        "options": ["duo", "quattuor", "sex", "octō"],
+        "correct_answer": "sex"
+    },
+    {
+        "question": "Translate: Multa animālia sunt magna saevaque.",
+        "options": ["Many animals are not large or very fierce.", "Many animals are large but not fierce.", "Many animals are large and fierce.", "Many animals are neither large nor fierce."],
+        "correct_answer": "Many animals are large and fierce."
+    },
+    {
+        "question": "Super Bowl LVII was this year. Which Super Bowl was it?",
+        "options": ["12", "17", "42", "57"],
+        "correct_answer": "57"
+    },
+    {
+        "question": "Students know that sometimes teachers should listen to the vōx populī. What should the teachers listen to?",
+        "options": ["their own instincts", "public opinion", "the wisdom of a mentor", "their administrator’s orders"],
+        "correct_answer": "public opinion"
+    },
+    {
+        "question": "Ubi gladiātōrēs imperātōrī dīcēbant, “Nōs moritūrī tē salūtāmus”?",
+        "options": ["in Colossēō", "in Campō Martiō", "in Templō Iovis", "in Cūriā"],
+        "correct_answer": "in Colossēō"
+    },
+    {
+        "question": "How should Latin teachers say goodbye to their students at the end of class?",
+        "options": ["Salvē!", "Salvēte!", "Valē!", "Valēte!"],
+        "correct_answer": "Valē!"
+    },
+    {
+        "question": "What name was shared by three brothers who defended Rome against the Cūriātiī of Alba Longa and by a man who defended Rome on the Pōns Sublicius from the Etruscans?",
+        "options": ["Mucius", "Coriolanus", "Horatius", "Cincinnatus"],
+        "correct_answer": "Horatius"
+    },
+    {
+        "question": "Your digitī, pollex, and palma are parts of your _____.",
+        "options": ["caput", "oculī", "manus", "aurēs"],
+        "correct_answer": "manus"
+    },
+    {
+        "question": "Who left behind his wife Creusa as he fled from Troy with his father Anchises and son Ascanius?",
+        "options": ["Priam", "Hector", "Aeneas", "Paris"],
+        "correct_answer": "Aeneas"
+    },
+    {
+        "question": "The English words effort, fortify, and comfort all derive from the same Latin adjective. What does it mean?",
+        "options": ["lucky", "strong", "calm", "difficult"],
+        "correct_answer": "strong"
+    },
+    {
+        "question": "What goddess changed Actaeon into a stag that was attacked by his own hunting dogs, because he had seen her bathing in the woods?",
+        "options": ["Diana", "Minerva", "Ceres", "Vesta"],
+        "correct_answer": "Diana"
+    },
+    {
+        "question": "Ecce! Vidēs multōs amīcōs in ātriō, cibum in culīnā, hortum in peristȳliō. Ubi es?",
+        "options": ["in thermīs", "in basilicā", "in vīllā", "in tabernīs"],
+        "correct_answer": "in vīllā"
+    },
+    {
+        "question": "The French word mère, the Spanish word madre, and the English word matron ultimately all derive from what Latin word?",
+        "options": ["marītus", "māter", "mare", "magister"],
+        "correct_answer": "māter"
+    },
+    {
+        "question": "According to its Latin root, a creature with lupine features would resemble what animal?",
+        "options": ["eagle", "horse", "fish", "wolf"],
+        "correct_answer": "wolf"
+    },
+    {
+        "question": "Which room of the Roman thermae was designated for hot baths?",
+        "options": ["caldārium", "tepidārium", "frīgidārium", "apodytērium"],
+        "correct_answer": "caldārium"
+    },
+    {
+        "question": "After the exile of Tarquinius Superbus and the end of the Monarchy, the Roman Republic began with Brutus and Collatinus holding which office?",
+        "options": ["emperor", "dictator", "consul", "censor"],
+        "correct_answer": "consul"
+    },
+    {
+        "question": "Because the senator misspoke during their speech, they later had to correct their _______.",
+        "options": ["lapsus linguae", "per capita", "nota bene", "magna cum laude"],
+        "correct_answer": "lapsus linguae"
+    },
+    {
+        "question": "In what part of a Roman house would one expect to find a garden?",
+        "options": ["in culīnā", "in cubiculō", "in peristȳliō", "in tablīnō"],
+        "correct_answer": "in peristȳliō"
+    },
+    {
+        "question": "What Greek deity is often depicted with winged sandals and a snake-entwined staff called a caduceus?",
+        "options": ["Hades", "Hera", "Hephaestus", "Hermes"],
+        "correct_answer": "Hermes"
+    },
+    {
+        "question": "Where would a Roman boy wear his bulla?",
+        "options": ["around his waist", "on his head", "around his neck", "on his finger"],
+        "correct_answer": "around his neck"
+    },
+    {
+        "question": "In addition to Pompeii, which of these cities did Mt. Vesuvius destroy?",
+        "options": ["Brundisium", "Herculaneum", "Ostia", "Rome"],
+        "correct_answer": "Herculaneum"
+    },
+    {
+        "question": "In what type of contest did Arachne and Minerva participate?",
+        "options": ["archery", "weaving", "running", "singing"],
+        "correct_answer": "weaving"
+    },
+    {
+        "question": "Who were the chief executive officials in the government of the Roman Republic?",
+        "options": ["consuls", "emperors", "kings", "priests"],
+        "correct_answer": "consuls"
+    },
+    {
+        "question": "Quot annōs habēs? is asking",
+        "options": ["What day is it?", "How old are you?", "What time is it?", "Who is your mother?"],
+        "correct_answer": "How old are you?"
+    },
+    {
+        "question": "According to its Latin root, a laboratory is a place for",
+        "options": ["hiding items", "washing", "working", "storing food"],
+        "correct_answer": "working"
+    },
+    {
+        "question": "One might use the Latin abbreviation ____ to restate or clarify something already mentioned.",
+        "options": ["i.e.", "A.D.", "p.m.", "R.I.P."],
+        "correct_answer": "i.e."
+    },
+    {
+        "question": "According to legend, what was Cincinnatus doing when he was asked to be dictator?",
+        "options": ["eating his dinner", "visiting a friend", "making a speech", "plowing a field"],
+        "correct_answer": "plowing a field"
+    },
+    {
+        "question": "Most Romans in the city of Rome did not live in vīllīs, but",
+        "options": ["in thermīs", "in īnsulīs", "in templīs", "in tabernīs"],
+        "correct_answer": "in īnsulīs"
+    },
+    {
+        "question": "A Roman would typically watch a chariot race at the",
+        "options": ["Curia", "Colosseum", "Circus Maximus", "Pantheon"],
+        "correct_answer": "Circus Maximus"
+    },
+    {
+        "question": "Quis sum? Sum rēx deōrum. Teneō fulmina et sceptrum. Regō omnēs et omnia.",
+        "options": ["Iuppiter", "Mars", "Vulcānus", "Mercurius"],
+        "correct_answer": "Iuppiter"
+    },
+    {
+        "question": "Clāmāre, dīcere and cantāre are all verbs requiring the use of which body part?",
+        "options": ["oculus", "ōs", "pēs", "manus"],
+        "correct_answer": "ōs"
+    },
+    {
+        "question": "Which city was conquered using a giant wooden horse as a trick?",
+        "options": ["Sparta", "Athens", "Troy", "Alexandria"],
+        "correct_answer": "Troy"
+    },
+    {
+        "question": "Innovation, novelty, and renovate all derive from the Latin word meaning",
+        "options": ["make", "new", "nine", "know"],
+        "correct_answer": "new"
+    },
+    {
+        "question": "A wolf, a shepherd, a river, and a priestess are all featured in a story about",
+        "options": ["Castor and Pollux", "Numa Pompilius", "Romulus and Remus", "Servius Tullius"],
+        "correct_answer": "Romulus and Remus"
+    },
+    {
+        "question": "What town, located at the mouth of the Tiber and founded by Ancus Marcius, was the port of Rome?",
+        "options": ["Alba Longa", "Lavinium", "Brundisium", "Ostia"],
+        "correct_answer": "Ostia"
+    },
+    {
+        "question": "To which question would “Iūlia” be a correct response?",
+        "options": ["Quid agis?", "Quāle est caelum?", "Quid est nōmen tibi?", "Ubi est lātrīna?"],
+        "correct_answer": "Quid est nōmen tibi?"
+    },
+    {
+        "question": "If Jupiter wanted to send a message, he would usually call upon",
+        "options": ["Mercury", "Venus", "Mars", "Juno"],
+        "correct_answer": "Mercury"
+    },
+    {
+        "question": "What is the name of the great, domed temple in Rome dedicated to all the gods?",
+        "options": ["Circus Maximus", "Pantheon", "Campus Martius", "Palatine"],
+        "correct_answer": "Pantheon"
+    },
+    {
+        "question": "In which room of a Roman house might you find the larārium and the impluvium?",
+        "options": ["trīclīnium", "cubiculum", "ātrium", "culīna"],
+        "correct_answer": "ātrium"
+    },
+    {
+        "question": "Transmission, missile, and emit are all English derivatives of the Latin verb that means to",
+        "options": ["remain", "move", "warn", "send"],
+        "correct_answer": "send"
+    },
+    {
+        "question": "The abbreviation i.e. stands for the Latin words id est and is best translated",
+        "options": ["that is", "for example", "therefore", "and the rest"],
+        "correct_answer": "that is"
+    },
+    {
+        "question": "Which of the following places was NOT located on the Italian peninsula?",
+        "options": ["Pompeiī", "Brundisium", "Troia", "Ōstia"],
+        "correct_answer": "Troia"
+    },
+    {
+        "question": "Which Roman god is often represented by a statue of a long-haired youth with a lyre or a bow and a quiver of arrows?",
+        "options": ["Apollo", "Mars", "Mercury", "Vulcan"],
+        "correct_answer": "Apollo"
+    },
+    {
+        "question": "The Latin words Novus ordō seclōrum, found on a U.S. dollar bill, may be translated",
+        "options": ["Out of many one", "New order of the ages", "He has favored our beginnings", "In God we trust"],
+        "correct_answer": "New order of the ages"
+    },
+    {
+        "question": "How is the year 1976 expressed in Roman numerals?",
+        "options": ["MCMLXXVI", "MMLX", "MCMVI", "MMXII"],
+        "correct_answer": "MCMLXXVI"
+    },
+    {
+        "question": "If a Latin student answers, “Adsum,” what does the teacher understand?",
+        "options": ["everyone is ready", "someone is sick", "the student is late", "the student is present"],
+        "correct_answer": "the student is present"
+    },
+    {
+        "question": "Iēntāculum, prandium, and cēna are Latin words that refer to",
+        "options": ["a woman’s clothes", "architecture", "meals", "rooms of a house"],
+        "correct_answer": "meals"
+    },
+    {
+        "question": "According to Roman history, Romulus, Numa, Tullus Hostilius, and Tarquinius Priscus were",
+        "options": ["consuls", "emperors", "generals", "kings"],
+        "correct_answer": "kings"
+    },
+    {
+        "question": "The Roman numeral LIX represents the number:",
+        "options": ["29", "59", "69", "109"],
+        "correct_answer": "59"
+    },
+    {
+        "question": "What structure in ancient Rome was used for chariot racing?",
+        "options": ["Pantheon", "Curia", "Basilica", "Circus"],
+        "correct_answer": "Circus"
+    },
+    {
+        "question": "When a Roman matron left the house, she would cover her head and shoulders with a:",
+        "options": ["palla", "solea", "tunica", "bulla"],
+        "correct_answer": "palla"
+    },
+    {
+        "question": "Pompeii, Herculaneum, and Stabiae were all destroyed:",
+        "options": ["during the 2nd Punic War", "by the fire of A.D. 64", "in an invasion by the Gauls", "by the eruption of Mt. Vesuvius in A.D. 79"],
+        "correct_answer": "by the eruption of Mt. Vesuvius in A.D. 79"
+    },
+    {
+        "question": "His bird was the eagle, his tree was the oak. He punished mortals with his lightning bolt. Who was he?",
+        "options": ["Ares", "Zeus", "Hermes", "Apollo"],
+        "correct_answer": "Zeus"
+    },
+    {
+        "question": "A Roman merchant would have navigated down the Tiber River in order to set sail from the port of:",
+        "options": ["Carthage", "Ostia", "Pompeii", "Brundisium"],
+        "correct_answer": "Ostia"
+    },
+    {
+        "question": "Quis erat deus bellī et pater Rōmulī Remīque?",
+        "options": ["Mars", "Iuppiter", "Neptūnus", "Vulcānus"],
+        "correct_answer": "Mars"
+    },
+    {
+        "question": "Ad astra per aspera and Labor omnia vincit are Latin sayings that encourage the value of:",
+        "options": ["being honest", "showing kindness", "working hard", "being humble"],
+        "correct_answer": "working hard"
+    },
+    {
+        "question": "The English words regal, regent, and regime all derive from the Latin verb meaning:",
+        "options": ["plow", "rule", "build", "read"],
+        "correct_answer": "rule"
+    },
+    {
+        "question": "After 20 minutes of playing _____ with his classmates, the Latin student had to call out 'Ubi estis? Nōn possum vōs invenīre! Redīte ad mē!'",
+        "options": ["soccer", "basketball", "hide-and-seek", "tag"],
+        "correct_answer": "hide-and-seek"
+    },
+    {
+        "question": "The common Latin abbreviation P.S. stands for",
+        "options": ["per silvās", "post scientiam", "per stylum", "post scrīptum"],
+        "correct_answer": "post scrīptum"
+    },
+    {
+        "question": "If your classmate asks you, 'Quota hōra est?' he wants to know",
+        "options": ["what time it is", "how you are doing", "how many friends you have", "what the weather is"],
+        "correct_answer": "what time it is"
+    },
+    {
+        "question": "Marcus was elected chairman of the board in absentia.",
+        "options": ["although youthful", "although inexperienced", "although not present", "although not interested in the position"],
+        "correct_answer": "although not present"
+    },
+    {
+        "question": "A Roman senator would most likely wear a ____when out in public.",
+        "options": ["stola", "toga", "bulla", "palla"],
+        "correct_answer": "toga"
+    },
+    {
+        "question": "A cubiculum, culīna, and trīclīnium were found",
+        "options": ["in aquā", "in caelō", "in templō", "in vīllā"],
+        "correct_answer": "in vīllā"
+    },
+    {
+        "question": "The Latin abbreviation P.M. (post merīdiem) means",
+        "options": ["dawn", "morning", "noon", "afternoon"],
+        "correct_answer": "afternoon"
+    },
+    {
+        "question": "What was the Roman name for the god of the sea?",
+        "options": ["Neptune", "Mars", "Apollo", "Jupiter"],
+        "correct_answer": "Neptune"
+    },
+    {
+        "question": "Which Roman structure was primarily used for chariot races?",
+        "options": ["the Forum", "the Pantheon", "the Circus Maximus", "the Colosseum"],
+        "correct_answer": "the Circus Maximus"
+    },
+    {
+        "question": "The Latin phrase 'Veni, vidi, vici' translates to",
+        "options": ["I came, I saw, I conquered", "I went, I fought, I won", "I arrived, I watched, I succeeded", "I entered, I fought, I overcame"],
+        "correct_answer": "I came, I saw, I conquered"
+    },
+    {
+        "question": "Which Roman numeral is used to represent the number 50?",
+        "options": ["L", "C", "D", "M"],
+        "correct_answer": "L"
+    },
+    {
+        "question": "In ancient Rome, what was a 'toga'?",
+        "options": ["a type of food", "a piece of clothing", "a musical instrument", "a kind of building"],
+        "correct_answer": "a piece of clothing"
+    },
+    {
+        "question": "Who was the Roman goddess of love and beauty?",
+        "options": ["Juno", "Minerva", "Venus", "Diana"],
+        "correct_answer": "Venus"
+    },
+    {
+        "question": "What was the primary language spoken in ancient Rome?",
+        "options": ["Greek", "Latin", "Hebrew", "Aramaic"],
+        "correct_answer": "Latin"
+    },
+    {
+        "question": "The phrase 'Caveat emptor' means",
+        "options": ["let the buyer beware", "let the seller be honest", "buy now, pay later", "none of the above"],
+        "correct_answer": "let the buyer beware"
+    },
+    {
+        "question": "Who was the Roman god of war?",
+        "options": ["Neptune", "Mars", "Apollo", "Jupiter"],
+        "correct_answer": "Mars"
+    },
+    {
+        "question": "Which Roman festival was celebrated in honor of the god Saturn?",
+        "options": ["Saturnalia", "Lupercalia", "Consualia", "Floralia"],
+        "correct_answer": "Saturnalia"
+    },
+    {
+        "question": "In ancient Rome, a 'villa' was",
+        "options": ["a type of meal", "a kind of weapon", "a large country house", "a type of festival"],
+        "correct_answer": "a large country house"
+    },
+    {
+        "question": "Which Roman numeral is used to represent the number 100?",
+        "options": ["L", "C", "D", "M"],
+        "correct_answer": "C"
+    },
+    {
+        "question": "The Latin phrase 'Et tu, Brute?' translates to",
+        "options": ["And you, Brutus?", "What is it, Brutus?", "Why, Brutus?", "Hello, Brutus!"],
+        "correct_answer": "And you, Brutus?"
+    },
+    {
+        "question": "What was the purpose of the Roman 'Forum'?",
+        "options": ["a place for gladiatorial games", "a marketplace and public square", "a residential area", "a military training ground"],
+        "correct_answer": "a marketplace and public square"
+    },
+    {
+        "question": "Who was the Roman goddess of the hunt?",
+        "options": ["Minerva", "Venus", "Diana", "Juno"],
+        "correct_answer": "Diana"
+    },
+    {
+        "question": "Which of these Roman buildings was used for religious ceremonies?",
+        "options": ["the Colosseum", "the Circus Maximus", "the Pantheon", "the Forum"],
+        "correct_answer": "the Pantheon"
+    },
+    {
+        "question": "What does the Latin phrase 'Ad astra' mean?",
+        "options": ["to the stars", "to the earth", "through the heavens", "from the heavens"],
+        "correct_answer": "to the stars"
+    },
+    {
+        "question": "Who was the first emperor of Rome?",
+        "options": ["Augustus", "Nero", "Julius Caesar", "Trajan"],
+        "correct_answer": "Augustus"
+    },
+    {
+        "question": "The Latin word 'aqua' means",
+        "options": ["fire", "air", "water", "earth"],
+        "correct_answer": "water"
+    },
+    {
+        "question": "Which Roman building is known for its large dome and oculus?",
+        "options": ["the Colosseum", "the Forum", "the Pantheon", "the Circus Maximus"],
+        "correct_answer": "the Pantheon"
+    },
+    {
+        "question": "The Latin phrase 'Tempus fugit' means",
+        "options": ["time flies", "time stands still", "time is precious", "time is slow"],
+        "correct_answer": "time flies"
+    },
+    {
+        "question": "ego, mei",
+        "options": ["I, me", "you (sg.)", "we, us", "you (pl.), you all"],
+        "correct_answer": "I, me"
+      },
+      {
+        "question": "tū, tuī",
+        "options": ["I, me", "you (sg.)", "we, us", "you (pl.), you all"],
+        "correct_answer": "you (sg.)"
+      },
+      {
+        "question": "nōs, nostrī/nostrum",
+        "options": ["I, me", "you (sg.)", "we, us", "you (pl.), you all"],
+        "correct_answer": "we, us"
+      },
+      {
+        "question": "vōs, vestrī/vestrum",
+        "options": ["I, me", "you (sg.)", "we, us", "you (pl.), you all"],
+        "correct_answer": "you (pl.), you all"
+      },
+      {
+        "question": "suī, sibi, sē, sē",
+        "options": ["him/her/it/one's-self; themselves", "this; these (pl.)", "that; those (pl.)", "himself/herself/itself; the very/real/actual one"],
+        "correct_answer": "him/her/it/one's-self; themselves"
+      },
+      {
+        "question": "hic, haec, hoc",
+        "options": ["him/her/it/one's-self; themselves", "this; these (pl.)", "that; those (pl.)", "himself/herself/itself; the very/real/actual one"],
+        "correct_answer": "this; these (pl.)"
+      },
+      {
+        "question": "ille, illa, illud",
+        "options": ["him/her/it/one's-self; themselves", "this; these (pl.)", "that; those (pl.)", "himself/herself/itself; the very/real/actual one"],
+        "correct_answer": "that; those (pl.)"
+      },
+      {
+        "question": "ipse, ipsa, ipsum",
+        "options": ["him/her/it/one's-self; themselves", "this; these (pl.)", "that; those (pl.)", "himself/herself/itself; the very/real/actual one"],
+        "correct_answer": "himself/herself/itself; the very/real/actual one"
+      },
+      {
+        "question": "is, ea, id",
+        "options": ["he/she/it/they (by gender/number)", "who, which, that", "Behold!", "Alas!"],
+        "correct_answer": "he/she/it/they (by gender/number)"
+      },
+      {
+        "question": "quī, quae, quod",
+        "options": ["he/she/it/they (by gender/number)", "who, which, that", "Behold!", "Alas!"],
+        "correct_answer": "who, which, that"
+      },
+      {
+        "question": "Ecce!",
+        "options": ["Behold!", "Alas!", "Oh, good! Well done!", "Yes (indeed)!"],
+        "correct_answer": "Behold!"
+      },
+      {
+        "question": "Ēheu!",
+        "options": ["Behold!", "Alas!", "Oh, good! Well done!", "Yes (indeed)!"],
+        "correct_answer": "Alas!"
+      },
+      {
+        "question": "Euge!",
+        "options": ["Behold!", "Alas!", "Oh, good! Well done!", "Yes (indeed)!"],
+        "correct_answer": "Oh, good! Well done!"
+      },
+      {
+        "question": "Ita (vērō)",
+        "options": ["Behold!", "Alas!", "Oh, good! Well done!", "Yes (indeed)!"],
+        "correct_answer": "Yes (indeed)!"
+      },
+      {
+        "question": "Minimē!",
+        "options": ["No!", "Why?", "How?", "How many?"],
+        "correct_answer": "No!"
+      },
+      {
+        "question": "Cūr?",
+        "options": ["No!", "Why?", "How?", "How many?"],
+        "correct_answer": "Why?"
+      },
+      {
+        "question": "-ne (enclitic)",
+        "options": ["(expects yes or no answer)", "(expects yes answer)", "(expects no answer)", "(of)?"],
+        "correct_answer": "(expects yes or no answer)"
+      },
+      {
+        "question": "Nōnne?",
+        "options": ["(expects yes or no answer)", "(expects yes answer)", "(expects no answer)", "(of)?"],
+        "correct_answer": "(expects yes answer)"
+      },
+      {
+        "question": "Num?",
+        "options": ["(expects yes or no answer)", "(expects yes answer)", "(expects no answer)", "(of)?"],
+        "correct_answer": "(expects no answer)"
+      },
+      {
+        "question": "Quālis?, Quāle?",
+        "options": ["What kind/sort (of)?", "When?", "What?", "Who?"],
+        "correct_answer": "What kind/sort (of)?"
+      },
+      {
+        "question": "Quandō?",
+        "options": ["What kind/sort (of)?", "When?", "What?", "Who?"],
+        "correct_answer": "When?"
+      },
+      {
+        "question": "Quid?",
+        "options": ["What kind/sort (of)?", "When?", "What?", "Who?"],
+        "correct_answer": "What?"
+      },
+      {
+        "question": "Quis?",
+        "options": ["What kind/sort (of)?", "When?", "What?", "Who?"],
+        "correct_answer": "Who?"
+      },
+      {
+        "question": "Quō?",
+        "options": ["To where?", "How?", "How many?", "Where?"],
+        "correct_answer": "To where?"
+      },
+      {
+        "question": "Quōmodo?",
+        "options": ["To where?", "How?", "How many?", "Where?"],
+        "correct_answer": "How?"
+      },
+      {
+        "question": "Quot?",
+        "options": ["To where?", "How?", "How many?", "Where?"],
+        "correct_answer": "How many?"
+      },
+      {
+        "question": "Ubi?",
+        "options": ["To where?", "How?", "How many?", "Where?"],
+        "correct_answer": "Where?"
+      },
+      {
+        "question": "Unde?",
+        "options": ["To where?", "How?", "How many?", "From where?"],
+        "correct_answer": "From where?"
+      },
+      {
+        "question": "ad (+acc)",
+        "options": ["to, towards; at, near", "before, in front of", "at, near, among; at the house of", "around"],
+        "correct_answer": "to, towards; at, near"
+      },
+      {
+        "question": "ante (+acc)",
+        "options": ["to, towards; at, near", "before, in front of", "at, near, among; at the house of", "around"],
+        "correct_answer": "before, in front of"
+      },
+      {
+        "question": "apud (+acc)",
+        "options": ["to, towards; at, near", "before, in front of", "at, near, among; at the house of", "around"],
+        "correct_answer": "at, near, among; at the house of"
+      },
+      {
+        "question": "circum (+acc)",
+        "options": ["to, towards; at, near", "before, in front of", "at, near, among; at the house of", "around"],
+        "correct_answer": "around"
+      },
+      {
+        "question": "contrā (+acc)",
+        "options": ["against", "outside of", "below", "between, among"],
+        "correct_answer": "against"
+      },
+      {
+        "question": "extrā (+acc)",
+        "options": ["against", "outside of", "below", "between, among"],
+        "correct_answer": "outside of"
+      },
+      {
+        "question": "infrā (+acc)",
+        "options": ["against", "outside of", "below", "between, among"],
+        "correct_answer": "below"
+      },
+      {
+        "question": "inter (+acc)",
+        "options": ["against", "outside of", "below", "between, among"],
+        "correct_answer": "between, among"
+      },
+      {
+        "question": "intrā (+acc)",
+        "options": ["within, inside", "because of", "through", "behind, after"],
+        "correct_answer": "within, inside"
+      },
+      {
+        "question": "ob (+acc)",
+        "options": ["within, inside", "because of", "through", "behind, after"],
+        "correct_answer": "because of"
+      },
+      {
+        "question": "per (+acc)",
+        "options": ["within, inside", "because of", "through", "behind, after"],
+        "correct_answer": "through"
+      },
+      {
+        "question": "post (+acc)",
+        "options": ["within, inside", "because of", "through", "behind, after"],
+        "correct_answer": "behind, after"
+      },
+      {
+        "question": "praeter (+acc)",
+        "options": ["except, beyond", "near", "on account of", "above, over"],
+        "correct_answer": "except, beyond"
+      },
+      {
+        "question": "prope (+acc)",
+        "options": ["except, beyond", "near", "on account of", "above, over"],
+        "correct_answer": "near"
+      },
+      {
+        "question": "propter (+acc)",
+        "options": ["except, beyond", "near", "on account of", "above, over"],
+        "correct_answer": "on account of"
+      },
+      {
+        "question": "suprā (+acc)",
+        "options": ["except, beyond", "near", "on account of", "above, over"],
+        "correct_answer": "above, over"
+      },
+      {
+        "question": "trāns (+acc)",
+        "options": ["across", "beyond", "away from, from", "with"],
+        "correct_answer": "across"
+      },
+      {
+        "question": "ultrā (+acc)",
+        "options": ["across", "beyond", "away from, from", "with"],
+        "correct_answer": "beyond"
+      },
+      {
+        "question": "ā / ab (+abl)",
+        "options": ["away from, from; (with time words) since; (with passive voice) by", "with", "down from, from; about", "out of, from"],
+        "correct_answer": "away from, from; (with time words) since; (with passive voice) by"
+      },
+      {
+        "question": "cum (+abl)",
+        "options": ["away from, from; (with time words) since; (with passive voice) by", "with", "down from, from; about", "out of, from"],
+        "correct_answer": "with"
+      },
+      {
+        "question": "dē (+abl)",
+        "options": ["away from, from; (with time words) since; (with passive voice) by", "with", "down from, from; about", "out of, from"],
+        "correct_answer": "down from, from; about"
+      },
+      {
+        "question": "ē / ex (+abl)",
+        "options": ["away from, from; (with time words) since; (with passive voice) by", "with", "down from, from; about", "out of, from"],
+        "correct_answer": "out of, from"
+      },
+      {
+        "question": "prae (+abl)",
+        "options": ["for, in front of, on behalf of", "without", "before, in front of", "from"],
+        "correct_answer": "before, in front of"
+      },
+      {
+        "question": "prō (+abl)",
+        "options": ["for, in front of, on behalf of", "without", "before, in front of", "from"],
+        "correct_answer": "for, in front of, on behalf of"
+      },
+      {
+        "question": "sine (+abl)",
+        "options": ["for, in front of, on behalf of", "without", "before, in front of", "from"],
+        "correct_answer": "without"
+      },
+      {
+        "question": "in (+acc. with verbs of motion)",
+        "options": ["into, onto, against", "in, on, upon", "under, beneath", "above, over"],
+        "correct_answer": "into, onto, against"
+      },
+      {
+        "question": "sub (+acc. with verbs of motion)",
+        "options": ["into, onto, against", "in, on, upon", "under, beneath", "above, over"],
+        "correct_answer": "under, beneath"
+      },
+      {
+        "question": "super (+acc. with verbs of motion)",
+        "options": ["into, onto, against", "in, on, upon", "under, beneath", "above, over"],
+        "correct_answer": "above, over"
+      },
+      {
+        "question": "atque or ac",
+        "options": ["and, and also, and moreover", "but, but on the other hand", "or", "either...or"],
+        "correct_answer": "and, and also, and moreover"
+      },
+      {
+        "question": "at",
+        "options": ["and, and also, and moreover", "but, but on the other hand", "or", "either...or"],
+        "correct_answer": "but, but on the other hand"
+      },
+      {
+        "question": "aut",
+        "options": ["and, and also, and moreover", "but, but on the other hand", "or", "either...or"],
+        "correct_answer": "or"
+      },
+      {
+        "question": "aut...aut",
+        "options": ["and, and also, and moreover", "but, but on the other hand", "or", "either...or"],
+        "correct_answer": "either...or"
+      },
+      {
+        "question": "autem (postpositive)",
+        "options": ["however, but, moreover, also", "therefore", "nor, and not", "neither...nor"],
+        "correct_answer": "however, but, moreover, also"
+      },
+      {
+        "question": "dum",
+        "options": ["however, but, moreover, also", "therefore", "nor, and not", "neither...nor"],
+        "correct_answer": "while"
+      },
+      {
+        "question": "enim (postpositive)",
+        "options": ["however, but, moreover, also", "therefore", "for, because, indeed, truly", "nor, and not"],
+        "correct_answer": "for, because, indeed, truly"
+      },
+      {
+        "question": "et",
+        "options": ["and", "nor, and not", "neither...nor", "both...and"],
+        "correct_answer": "and"
+      },
+      {
+        "question": "et...et",
+        "options": ["and", "nor, and not", "neither...nor", "both...and"],
+        "correct_answer": "both...and"
+      },
+      {
+        "question": "igitur (postpositive)",
+        "options": ["and", "nor, and not", "neither...nor", "therefore"],
+        "correct_answer": "therefore"
+      },
+      {
+        "question": "nam",
+        "options": ["and", "nor, and not", "neither...nor", "for, because"],
+        "correct_answer": "for, because"
+      },
+      {
+        "question": "nec or neque",
+        "options": ["and", "nor, and not", "neither...nor", "for, because"],
+        "correct_answer": "nor, and not"
+      },
+      {
+        "question": "neque...neque",
+        "options": ["and", "nor, and not", "neither...nor", "for, because"],
+        "correct_answer": "neither...nor"
+      },
+      {
+        "question": "postquam",
+        "options": ["after", "although", "and also", "because"],
+        "correct_answer": "after"
+      },
+      {
+        "question": "quamquam",
+        "options": ["after", "although", "and also", "because"],
+        "correct_answer": "although"
+      },
+      {
+        "question": "-que (enclitic)",
+        "options": ["and", "but", "or", "however"],
+        "correct_answer": "and"
+      },
+      {
+        "question": "quod",
+        "options": ["and", "but", "or", "because"],
+        "correct_answer": "because"
+      },
+      {
+        "question": "sed",
+        "options": ["and", "but", "or", "because"],
+        "correct_answer": "but"
+      },
+      {
+        "question": "ubi",
+        "options": ["where, when", "how", "what", "why"],
+        "correct_answer": "where, when"
+      },
+      {
+        "question": "ūnus, ūna, ūnum",
+        "options": ["one", "two", "three", "four"],
+        "correct_answer": "one"
+      },
+      {
+        "question": "duo, duae, duo",
+        "options": ["one", "two", "three", "four"],
+        "correct_answer": "two"
+      },
+      {
+        "question": "trēs, trēs, tria",
+        "options": ["one", "two", "three", "four"],
+        "correct_answer": "three"
+      },
+      {
+        "question": "quattuor",
+        "options": ["four", "five", "six", "seven"],
+        "correct_answer": "four"
+      },
+      {
+        "question": "quīnque",
+        "options": ["four", "five", "six", "seven"],
+        "correct_answer": "five"
+      },
+      {
+        "question": "sex",
+        "options": ["five", "six", "seven", "eight"],
+        "correct_answer": "six"
+      },
+      {
+        "question": "septem",
+        "options": ["six", "seven", "eight", "nine"],
+        "correct_answer": "seven"
+      },
+      {
+        "question": "octō",
+        "options": ["seven", "eight", "nine", "ten"],
+        "correct_answer": "eight"
+      },
+      {
+        "question": "novem",
+        "options": ["eight", "nine", "ten", "eleven"],
+        "correct_answer": "nine"
+      },
+      {
+        "question": "decem",
+        "options": ["nine", "ten", "eleven", "twelve"],
+        "correct_answer": "ten"
+      },
+      {
+        "question": "ūndecim",
+        "options": ["ten", "eleven", "twelve", "thirteen"],
+        "correct_answer": "eleven"
+      },
+      {
+        "question": "duodecim",
+        "options": ["eleven", "twelve", "thirteen", "fourteen"],
+        "correct_answer": "twelve"
+      },
+      {
+        "question": "tredecim",
+        "options": ["twelve", "thirteen", "fourteen", "fifteen"],
+        "correct_answer": "thirteen"
+      },
+      {
+        "question": "quattuordecim",
+        "options": ["thirteen", "fourteen", "fifteen", "sixteen"],
+        "correct_answer": "fourteen"
+      },
+      {
+        "question": "quīndecim",
+        "options": ["fourteen", "fifteen", "sixteen", "seventeen"],
+        "correct_answer": "fifteen"
+      },
+      {
+        "question": "sēdecim",
+        "options": ["fifteen", "sixteen", "seventeen", "eighteen"],
+        "correct_answer": "sixteen"
+      },
+      {
+        "question": "septendecim",
+        "options": ["sixteen", "seventeen", "eighteen", "nineteen"],
+        "correct_answer": "seventeen"
+      },
+      {
+        "question": "duodēvīgintī",
+        "options": ["seventeen", "eighteen", "nineteen", "twenty"],
+        "correct_answer": "eighteen"
+      },
+      {
+        "question": "undēvīgintī",
+        "options": ["eighteen", "nineteen", "twenty", "twenty-one"],
+        "correct_answer": "nineteen"
+      },
+      {
+        "question": "vīgintī",
+        "options": ["nineteen", "twenty", "twenty-one", "one hundred"],
+        "correct_answer": "twenty"
+      },
+      {
+        "question": "vīgintī et ūnus",
+        "options": ["twenty", "twenty-one", "one hundred", "one thousand"],
+        "correct_answer": "twenty-one"
+      },
+      {
+        "question": "centum",
+        "options": ["twenty-one", "one hundred", "one thousand", "first"],
+        "correct_answer": "one hundred"
+      },
+      {
+        "question": "mīlle",
+        "options": ["one hundred", "one thousand", "first", "second"],
+        "correct_answer": "one thousand"
+      },
+      {
+        "question": "prīmus, -a, -um",
+        "options": ["one thousand", "first", "second", "third"],
+        "correct_answer": "first"
+      },
+      {
+        "question": "secundus, -a, -um",
+        "options": ["first", "second", "third", "fourth"],
+        "correct_answer": "second"
+      },
+      {
+        "question": "tertius, -a, -um",
+        "options": ["second", "third", "fourth", "fifth"],
+        "correct_answer": "third"
+      },
+      {
+        "question": "quārtus, -a, -um",
+        "options": ["third", "fourth", "fifth", "sixth"],
+        "correct_answer": "fourth"
+      },
+      {
+        "question": "quīntus, -a, -um",
+        "options": ["fourth", "fifth", "sixth", "seventh"],
+        "correct_answer": "fifth"
+      },
+      {
+        "question": "sextus, -a, -um",
+        "options": ["fifth", "sixth", "seventh", "eighth"],
+        "correct_answer": "sixth"
+      },
+      {
+        "question": "septimus, -a, -um",
+        "options": ["sixth", "seventh", "eighth", "ninth"],
+        "correct_answer": "seventh"
+      },
+      {
+        "question": "octāvus, -a, -um",
+        "options": ["seventh", "eighth", "ninth", "tenth"],
+        "correct_answer": "eighth"
+      },
+      {
+        "question": "nōnus, -a, -um",
+        "options": ["eighth", "ninth", "tenth", "eleventh"],
+        "correct_answer": "ninth"
+      },
+      {
+        "question": "decimus, -a, -um",
+        "options": ["ninth", "tenth", "eleventh", "twelfth"],
+        "correct_answer": "tenth"
+      },
+      {
+        "question": "ūndecimus, -a, -um",
+        "options": ["tenth", "eleventh", "twelfth", "thirteenth"],
+        "correct_answer": "eleventh"
+      },
+      {
+        "question": "duodecimus, -a, -um",
+        "options": ["eleventh", "twelfth", "thirteenth", "fourteenth"],
+        "correct_answer": "twelfth"
+      }
+    ]
+  }
+  

@@ -6,10 +6,8 @@ import {
   Grid,
   Card,
   CardContent,
-  CardMedia,
   TextField,
   CircularProgress,
-  Alert,
   Button,
   ButtonGroup,
 } from '@mui/material';
@@ -20,22 +18,19 @@ export default function Lessons() {
   const [searchQuery, setSearchQuery] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [filter, setFilter] = useState('all'); // 'all', 'language', 'civilization'
-  const [selectedVideo, setSelectedVideo] = useState(null); // State for the enlarged video
+  const [filter, setFilter] = useState('all');
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
     const fetchVideos = async () => {
       try {
         setLoading(true);
         setError(null);
-
         const response = await fetch(`/api/youtube?searchQuery=${searchQuery}&filter=${filter}`);
         const data = await response.json();
-
         if (!response.ok) {
           throw new Error(data.error || 'Failed to fetch videos');
         }
-
         setVideos(data);
       } catch (error) {
         console.error('Error fetching YouTube videos:', error);
@@ -62,11 +57,11 @@ export default function Lessons() {
         <Typography variant="h4" align="center" sx={{ fontWeight: '600' }} gutterBottom>
           Lessons
         </Typography>
-  
+
         <Typography variant="body1" align="center" sx={{ color: 'text.secondary', mb: 4 }}>
           Explore our curated lessons designed to bring the Latin language and Roman culture to life.
         </Typography>
-  
+
         <Grid container spacing={2} alignItems="center" justifyContent="center" mb={4}>
           <Grid item xs={12} sm={8} md={6}>
             <TextField
@@ -83,7 +78,7 @@ export default function Lessons() {
               }}
             />
           </Grid>
-  
+
           <Grid item>
             <ButtonGroup variant="outlined">
               <Button
@@ -107,7 +102,7 @@ export default function Lessons() {
             </ButtonGroup>
           </Grid>
         </Grid>
-  
+
         {loading ? (
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '50vh' }}>
             <CircularProgress />
@@ -128,17 +123,21 @@ export default function Lessons() {
                   }}
                   onClick={() => setSelectedVideo(video)}
                 >
-                  {/* Display the thumbnail first */}
-                  <CardMedia
-                    component="img"
-                    image={video.thumbnail}
-                    alt={video.title}
-                    sx={{
-                      width: '100%',
-                      height: 0,
-                      paddingTop: '56.25%', // 16:9 Aspect Ratio
-                    }}
-                  />
+                  <Box sx={{ position: 'relative', width: '100%', pt: '56.25%' }}>
+                    <Box
+                      component="img"
+                      src={video.thumbnail}
+                      alt={video.title}
+                      sx={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                      }}
+                    />
+                  </Box>
                   <CardContent>
                     <Typography variant="h6" gutterBottom>
                       {video.title}
@@ -161,7 +160,7 @@ export default function Lessons() {
             ))}
           </Grid>
         )}
-  
+
         {!loading && videos.length === 0 && (
           <Box sx={{ textAlign: 'center', py: 4 }}>
             <Typography variant="body1" color="textSecondary">
@@ -169,23 +168,27 @@ export default function Lessons() {
             </Typography>
           </Box>
         )}
-  
+
         {selectedVideo && (
           <Box
             sx={{
               position: 'fixed',
-              top: '40px',
+              top: 0,
               left: 0,
-              width: '100%',
-              height: '100%',
-              backgroundColor: 'rgba(0, 0, 0, 0.8)',
+              right: 0,
+              bottom: 0,
+              width: '100vw',
+              height: '100vh',
+              backgroundColor: 'rgba(0, 0, 0, 0.9)',
               backdropFilter: 'blur(5px)',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              zIndex: 1200,
+              zIndex: 9999,
+              margin: 0,
+              padding: 0,
             }}
-            onClick={() => setSelectedVideo(null)} // Close on background click
+            onClick={() => setSelectedVideo(null)}
           >
             <Box
               sx={{
@@ -197,6 +200,7 @@ export default function Lessons() {
                 boxShadow: 5,
                 position: 'relative',
               }}
+              onClick={(e) => e.stopPropagation()}
             >
               <iframe
                 src={`https://www.youtube.com/embed/${selectedVideo.videoId}`}
