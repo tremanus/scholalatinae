@@ -1,10 +1,13 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box, Container, Typography, Paper } from '@mui/material';
 import Header from "@/src/components/header";
 import Footer from "@/src/components/footer";
 
 export default function PrivacyPolicy() {
+    useEffect(() => {
+        document.title = "ScholaLatinae | Learn Latin & Greek for Free";
+      }, []);
   return (
     <>
       <Header />

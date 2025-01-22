@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
 import { 
   Box, 
   Typography, 
@@ -21,6 +22,11 @@ import Header from "@/src/components/header";
 import Footer from "@/src/components/footer";
 
 export default function Donate() {
+
+    useEffect(() => {
+        document.title = "ScholaLatinae | Learn Latin & Greek for Free";
+      }, []);
+
   const donationImpact = [
     {
       icon: <FreeIcon sx={{ color: '#34a853' }} />,

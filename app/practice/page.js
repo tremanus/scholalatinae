@@ -73,6 +73,7 @@ export default function Quiz() {
   };
 
   useEffect(() => {
+    document.title = "ScholaLatinae | Learn Latin & Greek for Free";
     fetchNextQuestion();
   }, []);
 

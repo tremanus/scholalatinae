@@ -74,6 +74,8 @@ export default function Home() {
 
   useEffect(() => {
     let isMounted = true;
+    
+    document.title = "ScholaLatinae | Learn Latin & Greek for Free";
 
     const checkUsernameAndFetchStats = async () => {
       if (!session?.user?.email) {

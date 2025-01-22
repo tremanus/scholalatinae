@@ -100,6 +100,7 @@ export default function Leaderboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = "ScholaLatinae | Learn Latin & Greek for Free";
     const fetchLeaderboard = async () => {
       try {
         const response = await fetch('/api/leaderboard');

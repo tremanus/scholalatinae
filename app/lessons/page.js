@@ -22,6 +22,7 @@ export default function Lessons() {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
+    document.title = "ScholaLatinae | Learn Latin & Greek for Free";
     const fetchVideos = async () => {
       try {
         setLoading(true);
