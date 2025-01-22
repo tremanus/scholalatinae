@@ -13,7 +13,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import { useRouter } from 'next/navigation';
-import { Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Box, List, ListItem, ListItemIcon, ListItemText, ButtonBase } from '@mui/material';
 
 // Define the SidebarFooter component
 const SidebarFooter = () => {
@@ -23,10 +23,12 @@ const SidebarFooter = () => {
     <Box sx={{ mt: 'auto', borderTop: '1px solid rgba(0,0,0,0.12)', pt: 1 }}>
       <List>
         <ListItem 
-          button 
+          component={ButtonBase}
           onClick={() => router.push('/username')}
           sx={{ 
+            width: '100%',
             py: 1.5,
+            textAlign: 'left',
             '&:hover': {
               bgcolor: 'rgba(0,0,0,0.04)'
             }
@@ -38,10 +40,12 @@ const SidebarFooter = () => {
           <ListItemText primary="Settings" />
         </ListItem>
         <ListItem 
-          button 
+          component={ButtonBase}
           onClick={() => router.push('/logout')}
           sx={{ 
+            width: '100%',
             py: 1.5,
+            textAlign: 'left',
             '&:hover': {
               bgcolor: 'rgba(0,0,0,0.04)'
             }
@@ -119,16 +123,11 @@ function Dashboard({ children }) {
     }
   ];
 
-  const navigationWithHandlers = NAVIGATION.map(item => ({
-    ...item,
-    onClick: () => router.push(item.path),
-  }));
-
   return (
     <>
       {FONT_LINK}
       <AppProvider
-        navigation={navigationWithHandlers}
+        navigation={NAVIGATION}
         branding={{
           logo: (
             <img
