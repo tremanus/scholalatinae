@@ -173,7 +173,7 @@ export default function Leaderboard() {
               title="Best Streaks"
               data={leaderboardData?.streakLeaders || []}
               icon={FireIcon}
-              valueLabel="days"
+              valueLabel="Qs"
               getValue={(user) => user.best_streak}
             />
           </Grid>

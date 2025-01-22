@@ -1,3 +1,4 @@
+'use client';
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
@@ -6,10 +7,55 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import SportsMartialArtsIcon from '@mui/icons-material/SportsMartialArts';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import SettingsIcon from '@mui/icons-material/Settings';
+import LogoutIcon from '@mui/icons-material/Logout';
 import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
-import { useRouter } from 'next/navigation'; // Use Next.js App Router navigation
+import { useRouter } from 'next/navigation';
+import { Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+
+// Define the SidebarFooter component
+const SidebarFooter = () => {
+  const router = useRouter();
+
+  return (
+    <Box sx={{ mt: 'auto', borderTop: '1px solid rgba(0,0,0,0.12)', pt: 1 }}>
+      <List>
+        <ListItem 
+          button 
+          onClick={() => router.push('/username')}
+          sx={{ 
+            py: 1.5,
+            '&:hover': {
+              bgcolor: 'rgba(0,0,0,0.04)'
+            }
+          }}
+        >
+          <ListItemIcon>
+            <SettingsIcon />
+          </ListItemIcon>
+          <ListItemText primary="Settings" />
+        </ListItem>
+        <ListItem 
+          button 
+          onClick={() => router.push('/logout')}
+          sx={{ 
+            py: 1.5,
+            '&:hover': {
+              bgcolor: 'rgba(0,0,0,0.04)'
+            }
+          }}
+        >
+          <ListItemIcon>
+            <LogoutIcon />
+          </ListItemIcon>
+          <ListItemText primary="Sign Out" />
+        </ListItem>
+      </List>
+    </Box>
+  );
+};
 
 const FONT_LINK = (
   <link
@@ -23,6 +69,7 @@ const demoTheme = createTheme({
     fontFamily: '"Plus Jakarta Sans", sans-serif',
     allVariants: {
       color: '#000',
+      fontWeight: 500,
     },
   },
   breakpoints: {
@@ -44,42 +91,44 @@ function Dashboard({ children }) {
       segment: 'home',
       title: 'Home',
       icon: <DashboardIcon />,
-      onClick: () => router.push('/home'), // Navigate to /dashboard
+      onClick: () => router.push('/home'), 
     },
     {
-        segment: 'practice',
-        title: 'Practice',
-        icon: <SportsMartialArtsIcon />,
-        onClick: () => router.push('/practice'), // Navigate to /lessons
-      },
+      segment: 'practice',
+      title: 'Practice',
+      icon: <SportsMartialArtsIcon />,
+      onClick: () => router.push('/practice'), 
+    },
     {
       segment: 'lessons',
       title: 'Lessons',
       icon: <VideoLibraryIcon />,
-      onClick: () => router.push('/lessons'), // Navigate to /lessons
+      onClick: () => router.push('/lessons'), 
     },
     {
       segment: 'leaderboard',
       title: 'Leaderboard',
       icon: <SportsEsportsIcon />,
-      onClick: () => router.push('/leaderboard'), // Navigate to /games
+      onClick: () => router.push('/leaderboard'), 
     },
     {
-        segment: 'donate',
-        title: 'Donate',
-        icon: <MenuBookIcon />,
-        onClick: () => router.push('/donate'), // Navigate to /lessons
-      },
+      segment: 'donate',
+      title: 'Donate',
+      icon: <MenuBookIcon />,
+      onClick: () => router.push('/donate'), 
+    }
   ];
+
+  const navigationWithHandlers = NAVIGATION.map(item => ({
+    ...item,
+    onClick: () => router.push(item.path),
+  }));
 
   return (
     <>
       {FONT_LINK}
       <AppProvider
-        navigation={NAVIGATION.map((item) => ({
-          ...item,
-          onClick: item.onClick, // Attach onClick event
-        }))}
+        navigation={navigationWithHandlers}
         branding={{
           logo: (
             <img
@@ -106,7 +155,14 @@ function Dashboard({ children }) {
         }}
         theme={demoTheme}
       >
-        <DashboardLayout>{children}</DashboardLayout>
+        <DashboardLayout 
+          slots={{ 
+            toolbarAccount: () => null,
+            sidebarFooter: SidebarFooter 
+          }}
+        >
+          {children}
+        </DashboardLayout>
       </AppProvider>
     </>
   );
