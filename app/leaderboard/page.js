@@ -158,37 +158,41 @@ export default function Leaderboard() {
         </Paper>
 
         {/* Leaderboards Grid */}
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={4}>
-            <LeaderboardSection
-              title="Most Questions Correct"
-              data={leaderboardData?.correctLeaders || []}
-              icon={TrophyIcon}
-              valueLabel="correct"
-              getValue={(user) => user.questions_correct}
-            />
-          </Grid>
-          
-          <Grid item xs={12} md={4}>
-            <LeaderboardSection
-              title="Best Streaks"
-              data={leaderboardData?.streakLeaders || []}
-              icon={FireIcon}
-              valueLabel="Qs"
-              getValue={(user) => user.best_streak}
-            />
-          </Grid>
-          
-          <Grid item xs={12} md={4}>
-            <LeaderboardSection
-              title="Highest Success Rate"
-              data={leaderboardData?.successLeaders || []}
-              icon={StarsIcon}
-              valueLabel="%"
-              getValue={(user) => user.success_rate}
-            />
-          </Grid>
-        </Grid>
+        <Grid container spacing={3} sx={{ 
+    justifyContent: 'center',
+    width: '100%',
+    margin: '0 auto'
+  }}>
+  <Grid item xs={12} md={4} sx={{ minWidth: '355px' }}>
+    <LeaderboardSection
+      title="Most Questions Correct"
+      data={leaderboardData?.correctLeaders || []}
+      icon={TrophyIcon}
+      valueLabel="correct"
+      getValue={(user) => user.questions_correct}
+    />
+  </Grid>
+  
+  <Grid item xs={12} md={4} sx={{ minWidth: '355px' }}>
+    <LeaderboardSection
+      title="Best Streaks"
+      data={leaderboardData?.streakLeaders || []}
+      icon={FireIcon}
+      valueLabel="Qs"
+      getValue={(user) => user.best_streak}
+    />
+  </Grid>
+  
+  <Grid item xs={12} md={4} sx={{ minWidth: '355px' }}>
+    <LeaderboardSection
+      title="Success Rate"
+      data={leaderboardData?.successLeaders || []}
+      icon={StarsIcon}
+      valueLabel="%"
+      getValue={(user) => user.success_rate}
+    />
+  </Grid>
+</Grid>
       </Box>
     </Dashboard>
   );

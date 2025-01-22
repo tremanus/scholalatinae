@@ -235,7 +235,7 @@ export default function Home() {
                 <Typography variant="h5" sx={{ fontWeight: 600 }}>
                   {calculateSuccessRate(stats?.questions_correct || 0, stats?.questions_attempted || 0)}%
                 </Typography>
-                <Typography color="textSecondary" sx={{ fontWeight: 500 }}>Overall Success Rate</Typography>
+                <Typography color="textSecondary" sx={{ fontWeight: 500 }}>Success Rate</Typography>
               </CardContent>
             </Card>
           </Grid>
