@@ -41,6 +41,10 @@ export default function Header() {
     }
   };
 
+  const handleDashboard = () => {
+    router.push('/home')
+  };
+
   return (
     <header>
       <Link href="/" className="logo-container">
@@ -50,9 +54,14 @@ export default function Header() {
       
       <nav>
         {session ? (
-          <button onClick={handleSignOut} className="signup-button">
+          <>
+          <button onClick={handleSignOut} className="login-button">
             Logout
           </button>
+          <button onClick={handleDashboard} className="signup-button">
+            Dashboard
+            </button>
+          </>
         ) : (
           <>
             <button className="login-button" onClick={handleGoogleSignIn}>Login</button>
