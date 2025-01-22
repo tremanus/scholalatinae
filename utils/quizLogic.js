@@ -107,7 +107,7 @@ async function calculateTargetDifficulty(userStats) {
     });
 
     // New condition: if overall success rate is over 70%
-    if (overallSuccessRate > 70) {
+    if (advancedSuccessRate > 70) {
         console.log('Moving to advanced: Overall success rate > 70%');
         return 'advanced';
     }

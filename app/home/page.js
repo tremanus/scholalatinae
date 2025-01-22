@@ -27,6 +27,7 @@ import {
   StarBorder as StarIcon,
   TrendingUp as TrendingUpIcon,
 } from '@mui/icons-material';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 
 // Move Supabase client outside component
 const supabase = createClient(
@@ -167,28 +168,51 @@ export default function Home() {
           }}
         >
           <Stack direction="row" spacing={3} alignItems="center">
-            <Avatar 
-              src={session?.user?.image || '/default-avatar.png'} 
-              alt={session?.user?.name || 'Profile'} 
-              sx={{ 
-                width: 120, 
-                height: 120,
-                border: '3px solid #fff',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-              }}
-            />
-            <Box>
-              <Typography variant="h4" sx={{ fontWeight: 600, color: '#1a1a1a', mb: 0.5 }}>
-                Salve, {session?.user?.name || 'Scholar'}!
-              </Typography>
-              <Typography variant="subtitle1" sx={{ color: '#888', mb: 0.5 }}>
-                @{stats?.username || 'username'}
-              </Typography>
-              <Typography variant="subtitle1" sx={{ color: '#666' }}>
-                {stats?.best_streak ? `Best Streak: ${stats.best_streak} 🔥` : 'Start your learning journey!'}
-              </Typography>
-            </Box>
-          </Stack>
+  <Avatar 
+    src={session?.user?.image || '/default-avatar.png'} 
+    alt={session?.user?.name || 'Profile'} 
+    sx={{ 
+      width: 120, 
+      height: 120,
+      border: '3px solid #fff',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+    }}
+  />
+  <Box>
+    <Typography variant="h4" sx={{ fontWeight: 600, color: '#1a1a1a', mb: 0.5 }}>
+      Salve, {session?.user?.name || 'Scholar'}!
+    </Typography>
+    <Typography variant="subtitle1" sx={{ color: '#888', mb: 0.5 }}>
+      @{stats?.username || 'username'}
+    </Typography>
+    <Typography variant="subtitle1" sx={{ color: '#666' }}>
+      {stats?.best_streak ? `Best Streak: ${stats.best_streak} 🔥` : 'Start your learning journey!'}
+    </Typography>
+  </Box>
+  <Box sx={{ flexGrow: 1 }} /> {/* This pushes the button to the right */}
+  <Button
+    variant="contained"
+    href="https://www.zeffy.com/donation-form/e876bdc8-ceb3-424a-bb89-28ab758ecb6e"
+    target="_blank"
+    rel="noopener noreferrer"
+    startIcon={<MonetizationOnIcon />}
+    sx={{
+      bgcolor: '#1976d2',
+      color: 'white',
+      px: 4,
+      py: 1.5,
+      borderRadius: 2,
+      textTransform: 'none',
+      fontWeight: 600,
+      fontSize: '1rem',
+      '&:hover': {
+        bgcolor: '#1565c0'
+      }
+    }}
+  >
+    Support Us
+  </Button>
+</Stack>
         </Paper>
 
         {/* Progress Stats */}
